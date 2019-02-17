@@ -35,8 +35,8 @@ public class ConfigurationLoader {
             while ((line = br.readLine()) != null) {
                 sb.append(line);
             }   JsonUtils jsonUtils = new JsonUtils();
-            QuestionList taskDefs = jsonUtils.convertToObject(sb.toString(), QuestionList.class);
-            QuestionListManager.getInstance().init(taskDefs);
+            QuestionList ql = jsonUtils.convertToObject(sb.toString(), QuestionList.class);
+            QuestionListManager.getInstance().init(ql);
             
             return true;
         } catch (JsonParseException e) {
