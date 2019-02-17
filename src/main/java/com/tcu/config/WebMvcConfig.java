@@ -13,10 +13,6 @@ import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
-/**
- * @author michael
- *
- */
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
 

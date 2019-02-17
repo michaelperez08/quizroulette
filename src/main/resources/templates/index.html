@@ -9,11 +9,37 @@ and open the template in the editor.
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
       xmlns:layout="http://localhost:8080/index">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8"/>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+        <link href="css/custom.css" rel="stylesheet"/>
+
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
+
     <body>
-        <div>TODO write content</div>
+
+        <div id="init_game" class="block white win_size">
+            <div class="center-vertical center">
+                <a id="init_game_btn" class="waves-effect waves-light btn-large center pulse"><i class="material-icons left">videogame_asset</i>JUGAR</a>
+            </div>
+        </div>
+        <div id="game_parameters" class="block red win_size">
+
+        </div>
+        <div id="questions" class="block green win_size">
+
+        </div>
+        <div id="results" class="block yellow win_size">
+
+        </div>
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/controller.js"></script>
     </body>
 </html>
