@@ -1,0 +1,55 @@
+{
+    "questions":[
+      {
+        "id": 1,
+        "grado": "sexto",
+        "imagen": "img/hexagono.jpg",
+        "pregunta": "¿Cuanto es 2+2?",
+        "area": "Álgebra",
+        "respuesta": "4",
+        "opcion1": "2",
+        "opcion2": "5"
+      },
+      {
+        "id": 2,
+        "grado": "sexto",
+        "imagen": "img/hexagono.jpg",
+        "pregunta": "¿Cuantos lados tiene un hexágono?",
+        "area": "Geometría",
+        "respuesta": "6",
+        "opcion1": "7",
+        "opcion2": "8"
+      },
+      {
+        "id": 3,
+        "grado": "sexto",
+        "imagen": "img/hexagono.jpg",
+        "pregunta": "¿Cuantos lados tiene un hexágono?",
+        "area": "Cálculo",
+        "respuesta": "6",
+        "opcion1": "7",
+        "opcion2": "8"
+      },
+      {
+        "id": 4,
+        "grado": "sexto",
+        "imagen": "img/hexagono.jpg",
+        "pregunta": "¿Cuantos lados tiene un hexágono?",
+        "area": "Aritmética",
+        "respuesta": "6",
+        "opcion1": "7",
+        "opcion2": "8"
+      },
+      {
+        "id": 5,
+        "grado": "sexto",
+        "imagen": "img/hexagono.jpg",
+        "pregunta": "¿Cuantos lados tiene un hexágono?",
+        "area": "Trigonometría",
+        "respuesta": "6",
+        "opcion1": "7",
+        "opcion2": "8"
+      }
+        ]
+        
+}
