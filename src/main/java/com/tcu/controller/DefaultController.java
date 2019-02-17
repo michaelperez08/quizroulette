@@ -14,7 +14,7 @@ public class DefaultController {
         QuestionList ql = QuestionListManager.getInstance().getTaskList();
         
         mp.put("ql", ql);
-        return "/home";
+        return "/index";
     }
 
     @GetMapping("/home")
