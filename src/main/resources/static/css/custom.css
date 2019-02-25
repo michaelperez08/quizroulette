@@ -8,12 +8,36 @@ and open the template in the editor.
     Author     : michael
 */
 
+body {
+    overflow-y:hidden;
+}
+
 div.win_size{
     height:100vh;
 }
 
-#init_game{
-    background-image: url("../img/school.jpg");
+.section{
+    padding: 0px !important;
+}
+
+.block{
+    background-image: url("../img/school-footer2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+.mt-50{
+    margin-top: 100px;
+}
+
+.mt-25{
+    margin-top: 25px;
 }
 
 .center-vertical{
@@ -32,3 +56,34 @@ div.win_size{
 .center-vertical a i{
     font-size: 3.5rem;
 }
+
+#roullete-section{
+    margin-top: 15px;
+}
+
+#roullete-section img{
+    width: 300px;
+    height: 300px;
+}
+
+#roullete-section img{
+    width: 300px;
+    height: 300px;
+}
+
+#question-section h5{
+    font-weight: bold;
+}
+
+#question-section span{
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+/*animations*/
+.spine-image {
+    -webkit-transform: rotate(1500deg);
+    -webkit-transition: -webkit-transform 3s ease-out;
+}
+
