@@ -105,10 +105,11 @@ and open the template in the editor.
             <div class="container center">
                 <div class="row scale-transition" id="roullete-section">
                     <div class="col s12 mt-25" id="roullete-container">
-                        <img src="/img/roulette.png" id="roulette">
+                        <canvas id="canvas" height="400" width = "400"></canvas>
+                        <!-- <img src="/img/roulette.png" id="roulette">-->
                     </div>
                     <div class="col s12 mt-25">
-                        <a class="waves-effect waves-light btn" href="#questions" onclick="spineRoulete()">Girar
+                        <a class="waves-effect waves-light btn" href="#questions" onclick="miRuleta.startAnimation();">Girar
                             <i class="material-icons right">play_arrow</i>
                         </a>
                     </div>
@@ -174,8 +175,11 @@ and open the template in the editor.
         </div>
 
         <!--JavaScript at end of body for optimized loading-->
+        <script  src="js/TweenMax.min.js"></script>
+        <script src="js/Winwheel.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/init.js"></script>
         <script type="text/javascript" src="js/controller.js"></script>
+        <script type="text/javascript" src="js/ruleta.js"></script>
     </body>
 </html>

@@ -4,9 +4,9 @@
                 'segments' : [
                     {'fillStyle':'#f1c40f','text': 'Números'},
                     {'fillStyle':'#2ecc71','text': 'Geometría'},
-                    {'fillStyle':'#e67e22','text': 'Relaciones y Álgebra'},
+                    {'fillStyle':'#e67e22','text': 'Rel. y Álgeb'},
                     {'fillStyle':'#e74c3c','text': 'Medidas'},
-                    {'fillStyle':'#8e44ad','text': 'Estadística y Probabilidad'},
+                    {'fillStyle':'#8e44ad','text': 'Estad y Prob'},
                     ],
                     'animation':{
                         'type' : 'spinToStop',

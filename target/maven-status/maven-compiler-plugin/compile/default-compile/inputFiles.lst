@@ -1,5 +1,11 @@
-/home/michael/Downloads/spring-boot-spring-security-thymeleaf/src/main/java/com/tcu/common/JsonUtils.java
-/home/michael/Downloads/spring-boot-spring-security-thymeleaf/src/main/java/com/tcu/config/SpringSecurityConfig.java
-/home/michael/Downloads/spring-boot-spring-security-thymeleaf/src/main/java/com/tcu/error/MyAccessDeniedHandler.java
-/home/michael/Downloads/spring-boot-spring-security-thymeleaf/src/main/java/com/tcu/controller/DefaultController.java
-/home/michael/Downloads/spring-boot-spring-security-thymeleaf/src/main/java/com/tcu/SpringBootWebApplication.java
+C:\Proyectos Git\quizroulette\src\main\java\com\tcu\common\JsonUtils.java
+C:\Proyectos Git\quizroulette\src\main\java\com\tcu\SpringBootWebApplication.java
+C:\Proyectos Git\quizroulette\src\main\java\com\tcu\config\WebMvcConfig.java
+C:\Proyectos Git\quizroulette\src\main\java\com\tcu\ConfigurationLoader.java
+C:\Proyectos Git\quizroulette\src\main\java\com\tcu\error\MyAccessDeniedHandler.java
+C:\Proyectos Git\quizroulette\src\main\java\com\tcu\config\SpringSecurityConfig.java
+C:\Proyectos Git\quizroulette\src\main\java\com\tcu\core\QuestionListManager.java
+C:\Proyectos Git\quizroulette\src\main\java\com\tcu\controller\DefaultController.java
+C:\Proyectos Git\quizroulette\src\main\java\com\tcu\entities\QuestionList.java
+C:\Proyectos Git\quizroulette\src\main\java\com\tcu\controller\ThymeleafWebMvcConfig.java
+C:\Proyectos Git\quizroulette\src\main\java\com\tcu\entities\Question.java

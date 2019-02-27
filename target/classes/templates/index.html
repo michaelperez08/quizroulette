@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://localhost:8080/index">
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+        <link href="css/custom.css" rel="stylesheet"/>
+
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+        <div id="init_game" class="section scrollspy block win_size ">
+
+            <div class="container">
+                <br/><br/>
+                <h1 class="header center orange-text">Quiz Roulette</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">A aprender jugando!</h5>
+                </div>
+                <div class="row center mt-100">
+                    <a id="init_game_btn" href="#game_parameters" class="waves-effect waves-light btn-large center pulse"><i class="material-icons left">videogame_asset</i>JUGAR</a>
+                </div>
+                <br/><br/>
+
+            </div>
+
+            <!--<div class="center-vertical center">
+                <a id="init_game_btn" href="#game_parameters" class="waves-effect waves-light btn-large center pulse"><i class="material-icons left">videogame_asset</i>JUGAR</a>
+            </div>-->
+        </div>
+        <div id="game_parameters" class="block win_size section scrollspy">
+            <nav>
+                <div class="nav-wrapper orange">
+                    <a href="#" class="brand-logo center">Parametros</a>
+                    <!--<ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="sass.html">Sass</a></li>
+                        <li><a href="badges.html">Components</a></li>
+                        <li><a href="collapsible.html">JavaScript</a></li>
+                    </ul>-->
+                </div>
+            </nav>
+
+            <div class="container">
+                <br/><br/>
+                <h3 class="header center orange-text">Parametros</h3>
+                <div class="row">
+                    <div class="input-field col s12 m4 offset-m4 center">
+                        <select>
+                            <option value="1">Primero</option>
+                            <option value="2">Segundo</option>
+                            <option value="3">Tercero</option>
+                            <option value="4">Cuarto</option>
+                            <option value="5">Quinto</option>
+                            <option value="6">Sexto</option>
+                        </select>
+                        <label>Grado</label>
+                    </div>
+                    <div class="input-field col s12 m4 offset-m4 center">
+                        <select multiple>
+                            <option value="1">Estadistica</option>
+                            <option value="2">Geometria</option>
+                            <option value="3">Algebra</option>
+                        </select>
+                        <label>Area</label>
+                    </div>
+                    <div class="input-field inline s12 col m4 offset-m4">
+                        <input id="email_inline" type="number" class="validate"/>
+                        <label for="email_inline">Cantidad de preguntas</label>
+                    </div>
+                    <div class="col s12 m4 offset-m4 center mt-50">
+                        <a class="waves-effect waves-light btn" href="#questions">Iniciar
+                            <i class="material-icons right">play_arrow</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row center">
+
+                </div>
+                <br/><br/>
+
+            </div>
+
+        </div>
+
+        <div id="questions" class="block win_size section scrollspy">
+            <nav>
+                <div class="nav-wrapper orange">
+                    <a href="#" class="brand-logo center">Preguntas</a>
+                </div>
+            </nav>
+            <div class="container center">
+                <div class="row scale-transition" id="roullete-section">
+                    <div class="col s12 mt-25" id="roullete-container">
+                        <canvas id="canvas" height="400" width = "400"></canvas>
+                        <!-- <img src="/img/roulette.png" id="roulette">-->
+                    </div>
+                    <div class="col s12 mt-25">
+                        <a class="waves-effect waves-light btn" href="#questions" onclick="miRuleta.startAnimation();">Girar
+                            <i class="material-icons right">play_arrow</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row scale-transition scale-out left-align" id="question-section">
+                    <div class="col s12 m6 offset-m3 mt-25">
+                        <h5 class="header orange-text">Pregunta <span></span>#1</h5>
+                        <h5 class="header orange-text"><span></span>Alegbra</h5>
+                        <br/>
+                        <span class="mt-25">Esta es la pregunta de algebra que debes responder?<span/>
+                    </div>
+                    <div class="col s12 m6 offset-m3">
+                        <form action="#">
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Opcion 1</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Opcion 2</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Opcion 3</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Opcion 4</span>
+                                </label>
+                            </p>
+                    </div>
+                    <div class="col s12 m6 offset-m3 mt-25">
+                        <a class="waves-effect waves-light btn" href="#questions" onclick="checkAnswer()">Aceptar
+                            <i class="material-icons right">check</i>
+                        </a>
+                    </div>
+                    <div class="col s12 m6 offset-m3 mt-25 scale-transition scale-out" id="question-result-container">
+                        <span class="header" id="question-result">La respuesta es... <span class="green-text bold">CORRECTA!!</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="results" class="block win_size section scrollspy">
+            <nav>
+                <div class="nav-wrapper orange">
+                    <a href="#" class="brand-logo center">Resultado</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large orange" href="#init_game">
+                <i class="large material-icons">arrow_upward</i>
+            </a>
+        </div>
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script  src="js/TweenMax.min.js"></script>
+        <script src="js/Winwheel.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/init.js"></script>
+        <script type="text/javascript" src="js/controller.js"></script>
+        <script type="text/javascript" src="js/ruleta.js"></script>
+    </body>
+</html>

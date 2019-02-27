@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 17, 2019, 1:50:48 PM
+    Author     : michael
+*/
+
+body {
+    overflow-y:hidden;
+}
+
+div.win_size{
+    height:100vh;
+}
+
+.section{
+    padding: 0px !important;
+}
+
+.block{
+    background-image: url("../img/school-footer2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+.mt-50{
+    margin-top: 100px;
+}
+
+.mt-25{
+    margin-top: 25px;
+}
+
+.center-vertical{
+    width: 100%;
+    position: absolute !important;
+    top: 40%;
+    height: 100px;
+}
+
+.center-vertical a{
+    height: 100%;
+    line-height: 100px;
+    font-size: 3.5rem;
+}
+
+.center-vertical a i{
+    font-size: 3.5rem;
+}
+
+#roullete-section{
+    margin-top: 15px;
+}
+
+#roullete-section img{
+    width: 300px;
+    height: 300px;
+}
+
+#roullete-section img{
+    width: 300px;
+    height: 300px;
+}
+
+#question-section h5{
+    font-weight: bold;
+}
+
+#question-section span{
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+/*animations*/
+.spine-image {
+    -webkit-transform: rotate(1500deg);
+    -webkit-transition: -webkit-transform 3s ease-out;
+}
+
