@@ -8,6 +8,7 @@ package com.tcu.entities;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.util.List;
 
 /**
  *
@@ -32,13 +33,18 @@ public class Question {
     @JsonProperty("area")
     private String area;
     
-    @JsonProperty("respuesta")
-    private String respuesta;
+    @JsonProperty("grado")
+    private String grado;
     
-    @JsonProperty("opcion1")
-    private String opcion1;
+    @JsonProperty("opciones")
+    private List<Option> opciones;
+}
+
+@JsonTypeName("opciones")
+class Option{
+    @JsonProperty("texto")
+    private String texto;
     
-    @JsonProperty("opcion2")
-    private String opcion2;
-    
+    @JsonProperty("respuestaCorrecta")
+    private boolean respuestaCorrecta;
 }

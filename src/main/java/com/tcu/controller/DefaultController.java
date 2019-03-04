@@ -11,7 +11,7 @@ public class DefaultController {
 
     @GetMapping("/")
     public String home1(ModelMap mp) {
-        QuestionList ql = QuestionListManager.getInstance().getTaskList();
+        QuestionList ql = QuestionListManager.getInstance().getQuestionList();
         
         mp.put("ql", ql);
         return "/index";

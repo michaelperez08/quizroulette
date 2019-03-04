@@ -14,7 +14,6 @@ import com.tcu.entities.QuestionList;
 public class QuestionListManager {
     
   private static QuestionListManager instance;
-  // private TaskDefinitions taskDefinitions;
 
   private QuestionList questionList;
 
@@ -30,7 +29,7 @@ public class QuestionListManager {
 
   }
 
-  public QuestionList getTaskList() {
+  public QuestionList getQuestionList() {
     return this.questionList;
   }
     

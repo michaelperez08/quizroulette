@@ -1,0 +1,393 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "grado": "sexto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuanto es 2+2?",
+            "area": "algebra",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 2,
+            "grado": "sexto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "estadistica",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 3,
+            "grado": "sexto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "geometria",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 4,
+            "grado": "sexto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "medidas",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 5,
+            "grado": "sexto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "numeros",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 1,
+            "grado": "quinto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuanto es 2+2?",
+            "area": "algebra",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 2,
+            "grado": "quinto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "estadistica",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 3,
+            "grado": "quinto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "geometria",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 4,
+            "grado": "quinto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "medidas",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 5,
+            "grado": "quinto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "numeros",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 1,
+            "grado": "cuarto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuanto es 2+2?",
+            "area": "algebra",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 2,
+            "grado": "cuarto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "estadistica",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 3,
+            "grado": "cuarto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "geometria",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 4,
+            "grado": "cuarto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "medidas",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 5,
+            "grado": "cuarto",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "numeros",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 1,
+            "grado": "tercero",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuanto es 2+2?",
+            "area": "algebra",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 2,
+            "grado": "tercero",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "estadistica",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 3,
+            "grado": "tercero",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "geometria",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 4,
+            "grado": "tercero",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "medidas",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 5,
+            "grado": "tercero",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "numeros",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        }, {
+            "id": 1,
+            "grado": "segundo",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuanto es 2+2?",
+            "area": "algebra",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 2,
+            "grado": "segundo",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "estadistica",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 3,
+            "grado": "segundo",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "geometria",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 4,
+            "grado": "segundo",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "medidas",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 5,
+            "grado": "segundo",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "numeros",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 1,
+            "grado": "primero",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuanto es 2+2?",
+            "area": "algebra",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 2,
+            "grado": "primero",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "estadistica",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 3,
+            "grado": "primero",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "geometria",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 4,
+            "grado": "primero",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "medidas",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 5,
+            "grado": "primero",
+            "imagen": "img/hexagono.jpg",
+            "pregunta": "¿Cuantos lados tiene un hexágono?",
+            "area": "numeros",
+            "opciones":[
+                {"texto":"Opcion 1","respuestaCorrecta":false},
+                {"texto":"Opcion 2","respuestaCorrecta":false},
+                {"texto":"Opcion 3","respuestaCorrecta":true},
+                {"texto":"Opcion 4","respuestaCorrecta":false}
+            ]
+        }
+    ]
+}

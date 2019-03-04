@@ -26,7 +26,7 @@ public class ConfigurationLoader {
         BufferedReader br = null;
         try {
             StringBuffer sb = new StringBuffer();
-            InputStream inputStream = getClass().getResourceAsStream("/config/algebra.json");
+            InputStream inputStream = getClass().getResourceAsStream("/config/questions.json");
             br = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
             String line;
             while ((line = br.readLine()) != null) {
