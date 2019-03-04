@@ -87,3 +87,11 @@ div.win_size{
     -webkit-transition: -webkit-transform 3s ease-out;
 }
 
+#game_parameters input{
+    text-overflow: ellipsis;
+}
+
+
+#canvas{
+    width: 100%;
+}

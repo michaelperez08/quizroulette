@@ -14,14 +14,14 @@ import java.util.List;
  */
 public class QuestionList {
     
-    @JsonProperty("tasks")
+    @JsonProperty("questions")
     private List<Question> questionList;
 
-    public List<Question> getTaskList() {
+    public List<Question> getQuestionList() {
         return questionList;
     }
 
-    public void setTaskList(List<Question> taskList) {
+    public void setQuestionList(List<Question> questionList) {
         this.questionList = questionList;
     }
 
