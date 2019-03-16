@@ -3,59 +3,123 @@
         {
             "id": 1,
             "grado": "sexto",
-            "imagen": "img/hexagono.jpg",
-            "pregunta": "¿Cuanto es 2+2?",
-            "area": "algebra",
+            "imagen": "../img/graficoDeudaExterna.jpg",
+            "pregunta": "¿En que año Costa Rica tuvo la mayor deuda externa?",
+            "area": "numeros",
             "opciones":[
-                {"texto":"Opcion 1","respuestaCorrecta":false},
-                {"texto":"Opcion 2","respuestaCorrecta":false},
-                {"texto":"Opcion 3","respuestaCorrecta":true},
-                {"texto":"Opcion 4","respuestaCorrecta":false}
+                {"texto":"2005","respuestaCorrecta":false},
+                {"texto":"2011","respuestaCorrecta":false},
+                {"texto":"2009","respuestaCorrecta":true},
+                {"texto":"2003","respuestaCorrecta":false}
             ]
         },
         {
             "id": 2,
             "grado": "sexto",
-            "imagen": "img/hexagono.jpg",
-            "pregunta": "¿Cuantos lados tiene un hexágono?",
-            "area": "estadistica",
+            "imagen": "",
+            "pregunta": " El papá de Melanie va a la verdulería y compra 5 manzanas, 3 peras y 10 bananos. Los precios a pagar por cada producto son ₡250, ₡400 y ₡40 respectivamente. ¿Cuál fue la cantidad de dinero que pagó el papá de Melanie?",
+            "area": "numeros",
             "opciones":[
-                {"texto":"Opcion 1","respuestaCorrecta":false},
-                {"texto":"Opcion 2","respuestaCorrecta":false},
-                {"texto":"Opcion 3","respuestaCorrecta":true},
-                {"texto":"Opcion 4","respuestaCorrecta":false}
+                {"texto":"2750","respuestaCorrecta":false},
+                {"texto":"2850","respuestaCorrecta":true},
+                {"texto":"1500","respuestaCorrecta":false},
+                {"texto":"1975","respuestaCorrecta":false}
             ]
         },
         {
             "id": 3,
             "grado": "sexto",
-            "imagen": "img/hexagono.jpg",
-            "pregunta": "¿Cuantos lados tiene un hexágono?",
-            "area": "geometria",
+            "imagen": "",
+            "pregunta": "Soy un número de 5 dígitos. Soy múltiplo de 1000. Mi dígito en las decenas de millar es factor de 2. ¿Qué número soy?",
+            "area": "numeros",
             "opciones":[
-                {"texto":"Opcion 1","respuestaCorrecta":false},
-                {"texto":"Opcion 2","respuestaCorrecta":false},
-                {"texto":"Opcion 3","respuestaCorrecta":true},
-                {"texto":"Opcion 4","respuestaCorrecta":false}
+                {"texto":"20000","respuestaCorrecta":true},
+                {"texto":"2000","respuestaCorrecta":false},
+                {"texto":"2500","respuestaCorrecta":false},
+                {"texto":"25000","respuestaCorrecta":false}
             ]
         },
         {
             "id": 4,
             "grado": "sexto",
-            "imagen": "img/hexagono.jpg",
-            "pregunta": "¿Cuantos lados tiene un hexágono?",
-            "area": "medidas",
+            "imagen": "",
+            "pregunta": "Felipe y Anita disfrutan de todo, del sol en las dulces mañanas del verano y de la lluvia en el invierno. Una de las ventanas de la casa tiene dos puertitas rectangulares, de alto 80 cm y ancho 50 cm ¿ Cuál es el área total de la Ventana?",
+            "area": "geometria",
             "opciones":[
-                {"texto":"Opcion 1","respuestaCorrecta":false},
-                {"texto":"Opcion 2","respuestaCorrecta":false},
-                {"texto":"Opcion 3","respuestaCorrecta":true},
-                {"texto":"Opcion 4","respuestaCorrecta":false}
+                {"texto":"5000","respuestaCorrecta":false},
+                {"texto":"8000","respuestaCorrecta":true},
+                {"texto":"7800","respuestaCorrecta":false},
+                {"texto":"800","respuestaCorrecta":false}
             ]
         },
         {
             "id": 5,
             "grado": "sexto",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/edificiosCuadrilatero.jpg",
+            "pregunta": "Elena tiene un hijo que va a la escuela, de la casa a la escuela hay 1000 m. Esa, también, es la distancia entre la Biblioteca Pública y el Banco. El jueves va por su hijo a la escuela, pero, después irán a la Biblioteca Pública, que queda a 500 m de la escuela. Al salir de la Biblioteca deben ir al Banco, para luego ir a la casa. La disposición de tales edificios es así ¿Cuál es el perímetro del cuadrilátero descrito?",
+            "area": "geometria",
+            "opciones":[
+                {"texto":"3000","respuestaCorrecta":true},
+                {"texto":"2000","respuestaCorrecta":false},
+                {"texto":"1500","respuestaCorrecta":false},
+                {"texto":"2500","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 6,
+            "grado": "sexto",
+            "imagen": "../img/tablaPreciosProductos.jpg",
+            "pregunta": ".Una ensalada requiere de ½ kg de pepino, 750 g de tomate, 1 lechuga criolla, 100 g de zanahoria rallada y 50 g de cebolla. La siguiente tabla proporciona los precios en colones de estos ingredientes. ¿Cuánto cuesta el total de los ingredientes de la ensalada?",
+            "area": "medidas",
+            "opciones":[
+                {"texto":"1565","respuestaCorrecta":false},
+                {"texto":"1190","respuestaCorrecta":false},
+                {"texto":"1172,5","respuestaCorrecta":true},
+                {"texto":"1426,5","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 7,
+            "grado": "sexto",
+            "imagen": "",
+            "pregunta": "El costo de ½ kg de queso es de ₡1000, el de 1 kg ₡2000, el de 1½ kg ₡3000. ¿Qué relación existe entre los kilogramos de queso y su costo?",
+            "area": "algebra",
+            "opciones":[
+                {"texto":"Cada kg vale ₡1000.","respuestaCorrecta":false},
+                {"texto":"Cada ½ kg vale ₡1000.","respuestaCorrecta":true},
+                {"texto":"Se pueden comprar 2 kg por ₡3000.","respuestaCorrecta":false},
+                {"texto":"Cada colón equivale a un kg.","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 8,
+            "grado": "sexto",
+            "imagen": "",
+            "pregunta": "¿Cuál es el valor de la letra n en la siguiente expresión?. 81/ n = 9.",
+            "area": "algebra",
+            "opciones":[
+                {"texto":"6","respuestaCorrecta":false},
+                {"texto":"10","respuestaCorrecta":false},
+                {"texto":"21","respuestaCorrecta":false},
+                {"texto":"9","respuestaCorrecta":true}
+            ]
+        },
+        {
+            "id": 9,
+            "grado": "sexto",
+            "imagen": "",
+            "pregunta": "En una bolsa de arroz de dos kilogramos se indica que contiene el 95% de granos enteros, pero no estamos seguros de que sea así. ¿Qué estrategia podemos utilizar para averiguar si la afirmación es cierta?",
+            "area": "estadistica",
+            "opciones":[
+                {"texto":"Media","respuestaCorrecta":false},
+                {"texto":"Muestreo ","respuestaCorrecta":true},
+                {"texto":"Moda","respuestaCorrecta":false}
+            ]
+        },
+        {
+            "id": 5,
+            "grado": "quinto",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "numeros",
             "opciones":[
@@ -67,73 +131,8 @@
         },
         {
             "id": 1,
-            "grado": "quinto",
-            "imagen": "img/hexagono.jpg",
-            "pregunta": "¿Cuanto es 2+2?",
-            "area": "algebra",
-            "opciones":[
-                {"texto":"Opcion 1","respuestaCorrecta":false},
-                {"texto":"Opcion 2","respuestaCorrecta":false},
-                {"texto":"Opcion 3","respuestaCorrecta":true},
-                {"texto":"Opcion 4","respuestaCorrecta":false}
-            ]
-        },
-        {
-            "id": 2,
-            "grado": "quinto",
-            "imagen": "img/hexagono.jpg",
-            "pregunta": "¿Cuantos lados tiene un hexágono?",
-            "area": "estadistica",
-            "opciones":[
-                {"texto":"Opcion 1","respuestaCorrecta":false},
-                {"texto":"Opcion 2","respuestaCorrecta":false},
-                {"texto":"Opcion 3","respuestaCorrecta":true},
-                {"texto":"Opcion 4","respuestaCorrecta":false}
-            ]
-        },
-        {
-            "id": 3,
-            "grado": "quinto",
-            "imagen": "img/hexagono.jpg",
-            "pregunta": "¿Cuantos lados tiene un hexágono?",
-            "area": "geometria",
-            "opciones":[
-                {"texto":"Opcion 1","respuestaCorrecta":false},
-                {"texto":"Opcion 2","respuestaCorrecta":false},
-                {"texto":"Opcion 3","respuestaCorrecta":true},
-                {"texto":"Opcion 4","respuestaCorrecta":false}
-            ]
-        },
-        {
-            "id": 4,
-            "grado": "quinto",
-            "imagen": "img/hexagono.jpg",
-            "pregunta": "¿Cuantos lados tiene un hexágono?",
-            "area": "medidas",
-            "opciones":[
-                {"texto":"Opcion 1","respuestaCorrecta":false},
-                {"texto":"Opcion 2","respuestaCorrecta":false},
-                {"texto":"Opcion 3","respuestaCorrecta":true},
-                {"texto":"Opcion 4","respuestaCorrecta":false}
-            ]
-        },
-        {
-            "id": 5,
-            "grado": "quinto",
-            "imagen": "img/hexagono.jpg",
-            "pregunta": "¿Cuantos lados tiene un hexágono?",
-            "area": "numeros",
-            "opciones":[
-                {"texto":"Opcion 1","respuestaCorrecta":false},
-                {"texto":"Opcion 2","respuestaCorrecta":false},
-                {"texto":"Opcion 3","respuestaCorrecta":true},
-                {"texto":"Opcion 4","respuestaCorrecta":false}
-            ]
-        },
-        {
-            "id": 1,
             "grado": "cuarto",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuanto es 2+2?",
             "area": "algebra",
             "opciones":[
@@ -146,7 +145,7 @@
         {
             "id": 2,
             "grado": "cuarto",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "estadistica",
             "opciones":[
@@ -159,7 +158,7 @@
         {
             "id": 3,
             "grado": "cuarto",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "geometria",
             "opciones":[
@@ -172,7 +171,7 @@
         {
             "id": 4,
             "grado": "cuarto",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "medidas",
             "opciones":[
@@ -185,7 +184,7 @@
         {
             "id": 5,
             "grado": "cuarto",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "numeros",
             "opciones":[
@@ -198,7 +197,7 @@
         {
             "id": 1,
             "grado": "tercero",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuanto es 2+2?",
             "area": "algebra",
             "opciones":[
@@ -211,7 +210,7 @@
         {
             "id": 2,
             "grado": "tercero",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "estadistica",
             "opciones":[
@@ -224,7 +223,7 @@
         {
             "id": 3,
             "grado": "tercero",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "geometria",
             "opciones":[
@@ -237,7 +236,7 @@
         {
             "id": 4,
             "grado": "tercero",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "medidas",
             "opciones":[
@@ -250,7 +249,7 @@
         {
             "id": 5,
             "grado": "tercero",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "numeros",
             "opciones":[
@@ -262,7 +261,7 @@
         }, {
             "id": 1,
             "grado": "segundo",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuanto es 2+2?",
             "area": "algebra",
             "opciones":[
@@ -275,7 +274,7 @@
         {
             "id": 2,
             "grado": "segundo",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "estadistica",
             "opciones":[
@@ -288,7 +287,7 @@
         {
             "id": 3,
             "grado": "segundo",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "geometria",
             "opciones":[
@@ -301,7 +300,7 @@
         {
             "id": 4,
             "grado": "segundo",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "medidas",
             "opciones":[
@@ -314,7 +313,7 @@
         {
             "id": 5,
             "grado": "segundo",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "numeros",
             "opciones":[
@@ -327,7 +326,7 @@
         {
             "id": 1,
             "grado": "primero",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuanto es 2+2?",
             "area": "algebra",
             "opciones":[
@@ -340,7 +339,7 @@
         {
             "id": 2,
             "grado": "primero",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "estadistica",
             "opciones":[
@@ -353,7 +352,7 @@
         {
             "id": 3,
             "grado": "primero",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "geometria",
             "opciones":[
@@ -366,7 +365,7 @@
         {
             "id": 4,
             "grado": "primero",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "medidas",
             "opciones":[
@@ -379,7 +378,7 @@
         {
             "id": 5,
             "grado": "primero",
-            "imagen": "img/hexagono.jpg",
+            "imagen": "../img/hexagono.png",
             "pregunta": "¿Cuantos lados tiene un hexágono?",
             "area": "numeros",
             "opciones":[

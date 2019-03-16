@@ -95,3 +95,12 @@ div.win_size{
 #canvas{
     width: 100%;
 }
+
+#question-section #question-image-container{
+    margin-top: 10px;
+}
+
+#question-section img{
+    width: 70%;
+    max-height: 350px;
+}

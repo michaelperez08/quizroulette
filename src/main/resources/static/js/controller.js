@@ -12,9 +12,6 @@ var roundData;
 
 var indexQuestion;
 
-//initial configuration
-loadRouletteQuestions();
-
 function loadRouletteQuestions() {
     gameData = new Object();
     questionList.questions.forEach(question => {
@@ -35,29 +32,58 @@ function spineRoulete() {
     roulette.classList.add("spine-image");
 
     setTimeout(function () {
-        console.log("temrino de girar");
 
-        var n = document.getElementById("roullete-section");
-        n.classList.add("scale-out");
-
-        setTimeout(function () {
-            n.style.display = "none";
-
-            n = document.getElementById("question-section");
-            n.classList.add("scale-in");
-        }, 500);
+        changeGameSection("roullete", "question");
 
     }, 3100);
 }
 
+function changeGameSection(toHide, toShow) {
+    let ids = {roullete: "roullete-section", question: "question-section"};
+
+    var n = document.getElementById(ids[toHide]);
+    n.classList.remove("scale-in");
+    n.classList.add("scale-out");
+
+    setTimeout(function () {
+        n.style.display = "none";
+
+        n = document.getElementById(ids[toShow]);
+        n.style.display = "block";
+        n.classList.remove("scale-out");
+        n.classList.add("scale-in");
+    }, 600);
+}
+
 function checkAnswer() {
-    var result = document.getElementById("question-result-container");
-    result.classList.add("scale-in");
+    let currentSelectedOption = roundData.currentQuestion.selectedOption;
+    if (currentSelectedOption != undefined) {
+        var isTheCorrectAnswer = currentSelectedOption.respuestaCorrecta;
+        if (isTheCorrectAnswer) {
+            roundData.correctAnswers = roundData.correctAnswers+1;
+        } else {
+            //TODO
+        }
+        modalQuestionResult.showResult(isTheCorrectAnswer);
+    } else {
+        showToast('Debes seleccionar una opcion antes!');
+    }
 }
 
 function startRouletteAnimation(element) {
     if (/*validation here*/true) {
         miRuleta.startAnimation();
+    }
+}
+
+function nextQuestion() {
+    if (indexQuestion < roundData.parameters.numberOfQuestions) {
+        changeGameSection("question", "roullete");
+    } else {
+        let num = (roundData.correctAnswers)/(roundData.parameters.numberOfQuestions)*100;
+        let score = Math.round(num * 100) / 100;
+        document.querySelector("#game-score").innerHTML = "Nota: "+score;
+        doScrollSpy("#results");
     }
 }
 
@@ -79,6 +105,7 @@ function captureParameters(element) {
             roundData = new Object();
             roundData.parameters = gameParameters;
             roundData.questions = gameData[gameParameters.grade];
+            roundData.correctAnswers = 0;
 
             console.log(roundData);
             indexQuestion = 0;
@@ -96,50 +123,74 @@ function loadQuestionByArea(area) {
     indexQuestion++;
     var areaQuestions = roundData.questions[area];
     var question = areaQuestions[Math.floor(Math.random() * areaQuestions.length)];
-    
+    roundData.currentQuestion = question;
     console.log(question);
 
-    var n = document.getElementById("roullete-section");
-    n.classList.add("scale-out");
+    /*var n = document.getElementById("roullete-section");
+    n.classList.add("scale-out");*/
 
-    document.querySelector("#title-questionNumber").textContent = "Pregunta #"+indexQuestion;
-    document.querySelector("#title-questionArea").textContent = question.area;
+    document.querySelector("#title-questionNumber").textContent = "Pregunta #" + indexQuestion;
+    document.querySelector("#title-questionArea").textContent = ValueKey[question.area];
     document.querySelector("#span-questionText").textContent = question.pregunta;
     
+    let questionImgContainer = document.querySelector("#question-image-container");
+    if(question.imagen!=""){
+        questionImgContainer.style.display = "block";
+        document.querySelector("#question-image").src = '../img/'+question.imagen;
+    }else{
+        questionImgContainer.style.display = "none";
+    }
+
     var formQuestionOptions = document.querySelector("#form-questionOptions");
-    question.opciones.forEach((option, index)=>{
+    clearOptions(formQuestionOptions);
+    question.opciones.forEach((option, index) => {
         var newOption = createQuestionOption(option, index);
         formQuestionOptions.appendChild(newOption);
     });
-    
+
     var elems = document.querySelectorAll('select');
     var instances = M.FormSelect.init(elems, null);
 
+    
     //hides the roulette
     setTimeout(function () {
-        n.style.display = "none";
-        n = document.getElementById("question-section");
-        n.classList.add("scale-in");
+        changeGameSection("roullete", "question");
         resetearRuleta();
     }, 500);
 }
 
-function optionSelected(optionInput){
+function clearOptions(form) {
+    var formQuestionOptions = form.children;
+    let numberOfChilds = formQuestionOptions.length;
+    if (formQuestionOptions != undefined) {
+        for (var i = numberOfChilds-1; i >= 0; i--) {
+            let child = formQuestionOptions[i];
+            child.remove();
+        }
+    }
+}
+
+function optionSelected(optionInput) {
     var formQuestionOptions = document.querySelector("#form-questionOptions");
-    var cbOptions = formQuestionOptions.getElementsByTagName("input"); 
+    var cbOptions = formQuestionOptions.getElementsByTagName("input");
+    var optionInputIndex = optionInput.dataset.index;
+    roundData.currentQuestion.selectedOption = roundData.currentQuestion.opciones[optionInputIndex];
+    console.log(roundData.currentQuestion.selectedOption);
     for (var i = 0; i < cbOptions.length; i++) {
         var inputOption = cbOptions[i];
-        if(inputOption.dataset.index!=optionInput.dataset.index){
+        if (inputOption.dataset.index != optionInputIndex) {
             inputOption.checked = false;
         }
     }
 }
 
-function createQuestionOption(option, index){
-    var p = EC.createElement('p',null,null,null);
-    var label = EC.createElement('label',null,null,p);
-    var input = EC.createElement('input',{type:'checkbox',onclick:function(){optionSelected(this);},dataset:{index:index}},null,label);
-    var span = EC.createElement('span',null,option.texto,label);
+function createQuestionOption(option, index) {
+    var p = EC.createElement('p', null, null, null);
+    var label = EC.createElement('label', null, null, p);
+    var input = EC.createElement('input', {type: 'checkbox', onclick: function () {
+            optionSelected(this);
+        }, dataset: {index: index}}, null, label);
+    var span = EC.createElement('span', null, option.texto, label);
     return p;
 }
 
@@ -147,10 +198,12 @@ function showToast(message) {
     M.toast({html: message})
 }
 
-
-
 function doScrollSpy(id) {
     var a = document.querySelector('#scrollspy-helper');
     a.href = id;
     a.click();
+}
+
+function reaload(){
+    window.location.replace("/");
 }

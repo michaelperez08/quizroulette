@@ -1,14 +1,27 @@
 var segmentoSeleccionado;
-
+var KeyValue = {
+    Números:'numeros',
+    Geometría:'geometria',
+    Álgebra:'algebra',
+    Medidas:'medidas',
+    Estadística:'estadistica'
+};
+var ValueKey = {
+    numeros:'Números',
+    geometria:'Geometría',
+    algebra:'Álgebra',
+    medidas:'Medidas',
+    estadistica:'Estadística'
+};
 var miRuleta = new Winwheel({
     'numSegments': 5,
     'outerRadius': 170,
     'segments': [
         {'fillStyle': '#f1c40f', 'text': 'Números'},
         {'fillStyle': '#2ecc71', 'text': 'Geometría'},
-        {'fillStyle': '#e67e22', 'text': 'Rel. y Álgeb'},
+        {'fillStyle': '#e67e22', 'text': 'Álgebra'},
         {'fillStyle': '#e74c3c', 'text': 'Medidas'},
-        {'fillStyle': '#8e44ad', 'text': 'Estad y Prob'},
+        {'fillStyle': '#8e44ad', 'text': 'Estadística'},
     ],
     'animation': {
         'type': 'spinToStop',
@@ -23,7 +36,7 @@ function Mensaje() {
     console.log("Elemento seleccionado: " + segmentoSeleccionado.text + "!");
     //Reinicio de la ruleta (valor inicial) 
     
-    loadQuestionByArea('numeros');
+    loadQuestionByArea(KeyValue[segmentoSeleccionado.text]);
 }
 
 function resetearRuleta() {

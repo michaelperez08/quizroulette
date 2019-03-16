@@ -107,7 +107,7 @@ and open the template in the editor.
             </nav>
             <div class="container center">
                 <div class="row scale-transition" id="roullete-section">
-                    <div class="col s12 m6 offset-m3 mt-25" id="roullete-container">
+                    <div class="col s12 m6 offset-m3 l4 offset-l4 mt-25" id="roullete-container">
                         <canvas id="canvas" height="400" width = "400"></canvas>
                         <!-- <img src="/img/roulette.png" id="roulette">-->
                     </div>
@@ -118,24 +118,23 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="row scale-transition scale-out left-align" id="question-section">
-                    <div class="col s12 m6 offset-m3 mt-25">
+                    <div class="col s12 m6 offset-m3 l6 offset-l3 mt-25">
                         <h5 class="header orange-text" id="title-questionNumber">Pregunta #1</h5>
                         <h5 class="header orange-text" id="title-questionArea">Alegbra</h5>
                         <br/>
                         <span class="mt-25" id="span-questionText">Esta es la pregunta de algebra que debes responder?<span/>
                     </div>
-                    <div class="col s12 m6 offset-m3">
+                    <div class="col s12 m6 offset-m3 l4 offset-l4" id="question-image-container">
+                        <img id="question-image" src=""/>
+                    </div>
+                    <div class="col s12 m6 offset-m3 l6 offset-l3">
                         <form action="#" id="form-questionOptions">
-                            
+
                         </form>
                     </div>
-                    <div class="col s12 m6 offset-m3 mt-25">
+                    <div class="col s12 m6 offset-m3 l6 offset-l3 mt-25">
                         <a class="waves-effect waves-light btn" href="#questions" onclick="checkAnswer()">Revisar
-                            <i class="material-icons right">check</i>
                         </a>
-                    </div>
-                    <div class="col s12 m6 offset-m3 mt-25 scale-transition scale-out" id="question-result-container">
-                        <span class="header" id="question-result">La respuesta es... <span class="green-text bold">CORRECTA!!</span></span>
                     </div>
                 </div>
             </div>
@@ -147,6 +146,20 @@ and open the template in the editor.
                     <a href="#" class="brand-logo center">Resultado</a>
                 </div>
             </nav>
+            <div class="section no-pad-bot" id="index-banner">
+                <div class="container">
+                    <br/><br/>
+                    <h1 class="header center orange-text" id="game-score">Nota: 99</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light">Gracias por jugar!</h5>
+                    </div>
+                    <div class="row center">
+                        <a href="" id="download-button" onclick="reload()" class="btn-large waves-effect waves-light orange">Volver a jugar</a>
+                    </div>
+                    <br/><br/>
+
+                </div>
+            </div>
         </div>
 
         <div class="fixed-action-btn">
@@ -155,6 +168,22 @@ and open the template in the editor.
             </a>
         </div>
 
+        <!--Modals-->
+        <div id="modal-questionResult" class="modal">
+            <div class="modal-content">
+                <div class="container">
+                    <br/><br/>
+                    <h1 class="header center green-text" id="h1-MQR-Text">Respuesta Correcta!</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light"><i id="i-MQR-Icon" class="large material-icons">check</i></h5>
+                    </div>
+                    <br/><br/>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" onclick="modalQuestionResult.continue()" class="waves-effect waves-green btn-flat">Continuar</a>
+            </div>
+        </div>
         <!--This 'a' tag its added to execute a scrollspy animation programmatically-->
         <a href="" id="scrollspy-helper"></a>
 
