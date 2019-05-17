@@ -19,7 +19,12 @@ public class DefaultController {
 
     @GetMapping("/home")
     public String home() {
-        return "/home";
+        return "/index";
+    }
+    
+    @GetMapping("/preguntas")
+    public String questions() {
+        return "/questions";
     }
 
     @GetMapping("/admin")
