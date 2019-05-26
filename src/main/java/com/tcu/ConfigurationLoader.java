@@ -8,16 +8,19 @@ package com.tcu;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.tcu.common.JsonUtils;
+import com.tcu.common.Validator;
+import com.tcu.common.FileCreator;
+import com.tcu.core.QuestionDispatcher;
 import com.tcu.core.QuestionListManager;
 import com.tcu.entities.QuestionList;
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 
 public class ConfigurationLoader {
 
@@ -28,13 +31,34 @@ public class ConfigurationLoader {
             StringBuffer sb = new StringBuffer();
             InputStream inputStream = getClass().getResourceAsStream("/config/questions.json");
             br = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
+
             String line;
             while ((line = br.readLine()) != null) {
                 sb.append(line);
-            }   JsonUtils jsonUtils = new JsonUtils();
+            }
+            JsonUtils jsonUtils = new JsonUtils();
             QuestionList ql = jsonUtils.convertToObject(sb.toString(), QuestionList.class);
             QuestionListManager.getInstance().init(ql);
+
+            Validator osvalidator = new Validator();
             
+            if (osvalidator.checkQuestionsFile(QuestionDispatcher.JSON_PREGUNTAS)) {
+
+                sb = new StringBuffer();
+                inputStream = new FileInputStream(osvalidator.getAppPathByOS()+"preguntas.json");
+                br = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
+
+                while ((line = br.readLine()) != null) {
+                    sb.append(line);
+                }
+                jsonUtils = new JsonUtils();
+                ql = jsonUtils.convertToObject(sb.toString(), QuestionList.class);
+                QuestionListManager.getInstance().initCustomList(ql);
+                
+            }else{
+                return false;
+            }
+
             return true;
         } catch (JsonParseException e) {
             // TODO Auto-generated catch block
@@ -56,7 +80,7 @@ public class ConfigurationLoader {
             }
         }
         return false;
-        
+
     }
 
 }

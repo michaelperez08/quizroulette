@@ -12,25 +12,37 @@ import com.tcu.entities.QuestionList;
  * @author michael
  */
 public class QuestionListManager {
-    
-  private static QuestionListManager instance;
 
-  private QuestionList questionList;
+    private static QuestionListManager instance;
 
-  public static QuestionListManager getInstance() {
-    if (instance == null)
-      instance = new QuestionListManager();
-    return instance;
-  }
+    private QuestionList questionList;
+    private QuestionList customQuestionList;
 
-  public void init(QuestionList questionList) {
+    public static QuestionListManager getInstance() {
+        if (instance == null) {
+            instance = new QuestionListManager();
+        }
+        return instance;
+    }
 
-    this.questionList = questionList;
+    public void init(QuestionList questionList) {
 
-  }
+        this.questionList = questionList;
 
-  public QuestionList getQuestionList() {
-    return this.questionList;
-  }
-    
+    }
+
+    public void initCustomList(QuestionList questionList) {
+
+        this.customQuestionList = questionList;
+
+    }
+
+    public QuestionList getQuestionList() {
+        return this.questionList;
+    }
+
+    public QuestionList getCustomQuestionList() {
+        return customQuestionList;
+    }
+
 }

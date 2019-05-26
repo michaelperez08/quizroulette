@@ -12,8 +12,10 @@ public class DefaultController {
     @GetMapping("/")
     public String home1(ModelMap mp) {
         QuestionList ql = QuestionListManager.getInstance().getQuestionList();
+        QuestionList cql = QuestionListManager.getInstance().getCustomQuestionList();
         
         mp.put("ql", ql);
+        mp.put("cql", cql);
         return "/index";
     }
 
@@ -23,7 +25,12 @@ public class DefaultController {
     }
     
     @GetMapping("/preguntas")
-    public String questions() {
+    public String questions(ModelMap mp) {
+        QuestionList ql = QuestionListManager.getInstance().getQuestionList();
+        QuestionList cql = QuestionListManager.getInstance().getCustomQuestionList();
+        
+        mp.put("ql", ql);
+        mp.put("cql", cql);
         return "/questions";
     }
 
