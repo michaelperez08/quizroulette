@@ -104,3 +104,17 @@ div.win_size{
     width: 70%;
     max-height: 350px;
 }
+
+.cq-collection-text{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 95%;
+    white-space: nowrap;
+    line-height: 1.5rem;
+    vertical-align: middle;
+}
+
+.floatRight{
+    float: right;
+}

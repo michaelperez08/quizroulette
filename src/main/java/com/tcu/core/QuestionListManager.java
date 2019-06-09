@@ -5,7 +5,9 @@
  */
 package com.tcu.core;
 
+import com.tcu.entities.Question;
 import com.tcu.entities.QuestionList;
+import java.math.BigInteger;
 
 /**
  *
@@ -43,6 +45,17 @@ public class QuestionListManager {
 
     public QuestionList getCustomQuestionList() {
         return customQuestionList;
+    }
+    
+    public boolean removeFromCustomQuestionListByID(BigInteger id){
+        boolean removed = false; 
+        for(Question q: customQuestionList.getQuestionList()){
+            if(q.getId().intValue()==id.intValue()){
+                removed=customQuestionList.getQuestionList().remove(q);
+                break;
+            }
+        }
+        return removed;
     }
 
 }

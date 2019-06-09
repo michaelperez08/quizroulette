@@ -5,11 +5,14 @@
  */
 package com.tcu.core;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tcu.common.FileCreator;
 import com.tcu.common.Validator;
 import com.tcu.entities.Question;
 import com.tcu.entities.QuestionList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -25,11 +28,21 @@ public class QuestionDispatcher {
         QuestionListManager.getInstance().getCustomQuestionList().getQuestionList().add(q);
         QuestionList ql = QuestionListManager.getInstance().getCustomQuestionList();
         
-        ObjectMapper Obj = new ObjectMapper();
-        String filecontent = Obj.writeValueAsString(ql);
-        fl = new FileCreator();
-
-        return fl.createFile(getQuestionsFileName(), filecontent);
+        return saveListOnFile(ql);
+    }
+    
+    public boolean saveListOnFile(QuestionList ql){
+        try {
+            ObjectMapper Obj = new ObjectMapper();
+            String filecontent = Obj.writeValueAsString(ql);
+            fl = new FileCreator();
+            
+            return fl.createFile(getQuestionsFileName(), filecontent);
+        } catch (JsonProcessingException ex) {
+            Logger.getLogger(QuestionDispatcher.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+        
     }
     
     public String getQuestionsFileName(){

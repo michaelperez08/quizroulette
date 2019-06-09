@@ -14,6 +14,31 @@ document.addEventListener('DOMContentLoaded', () => {
             this.ld.style.display = "none";
         }
     };
+    
+    options = {dismissible: false};
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+    
+    confirmationModal = {
+        cm: M.Modal.getInstance(document.getElementById("confirmation_modal")),
+        text: document.getElementById("cm-text"),
+        id: null,
+        deleteButton: document.getElementById("cm-delete"),
+        show : function(text, id){
+            this.text.innerHTML = text;
+            this.cm.open();
+            this.id = id;
+        },
+        delete: function(){
+            deleteQuestionRequest(this.id);
+        },
+        close: function(){
+            this.cm.close();
+        }
+    }
+    
+    loadCollection();
+    axios.defaults.headers.get['Content-Type'] = 'application/json';
 });
 
 var elem = document.querySelector(".tabs");
@@ -24,7 +49,9 @@ var instances = M.FormSelect.init(elems, null);
 var imgSrc = "";
 var optionList = [];
 var isSomeOptionSelected = false;
-const saveQuestionURL = "http://localhost:8080/quizroullete/questions/save";
+const baseURL = "http://localhost:8080/";
+const saveQuestionURL = "quizroulette/questions/save";
+const deleteQuestionURL = "quizroulette/questions/delete/";
 
 function previewImage() {
     var preview = document.querySelector('#img-preview'); //selects the query named img
@@ -112,7 +139,7 @@ function verifyOption(newOption) {
     return isNew;
 }
 
-function saveQuestion() {
+function saveQuestionRequest() {
     var selectSchoolGrade = document.getElementById("select-schoolGrade");
     var selectAreas = document.getElementById("select-areas");
     var textAreaQuestion = document.getElementById("textarea-question");
@@ -128,8 +155,11 @@ function saveQuestion() {
                     console.log('question saved successfully');
                     console.log(response);
                     //
-                    if (response.data == 200) {
-
+                    if (response.status == 200) {
+                        customQuestionList.questions = response.data.questions;
+                        loadCollection();
+                        showMessage("Pregunta guardada!");
+                        cleanNewQuestionForm();
                     }
                     loadingDialogFullScreen.dismis();
                 })
@@ -139,7 +169,56 @@ function saveQuestion() {
                     //error(response.status, response.data.description);
                 });
     }
+}
 
+function deleteQuestionRequest(id) {
+    loadingDialogFullScreen.show();
+    axios.get(deleteQuestionURL + id)
+            .then((response) => {
+                loadingDialogFullScreen.dismis();
+                console.log(response);
+                //
+                if (response.status == 200) {
+                    console.log('question deleted successfully');
+                    customQuestionList.questions = response.data.questions;
+                    loadCollection();
+                    showMessage("Pregunta eliminada!");
+                    confirmationModal.close();
+                }
+                loadingDialogFullScreen.dismis();
+            })
+            .catch((response) => {
+                console.log('catch response', response);
+                loadingDialogFullScreen.dismis();
+            });
+}
+
+function generateID() {
+    var now = new Date();
+
+    var timestamp = now.getFullYear().toString();
+    timestamp += now.getMonth().toString();
+    timestamp += now.getDate().toString();
+    timestamp += now.getHours().toString();
+    timestamp += now.getMinutes().toString();
+    timestamp += now.getSeconds().toString();
+    timestamp += now.getMilliseconds().toString();
+
+    console.log("unique ID ", timestamp);
+    return parseInt(timestamp);
+}
+
+function cleanNewQuestionForm() {
+    var selectSchoolGrade = document.getElementById("select-schoolGrade");
+    var selectAreas = document.getElementById("select-areas");
+    var textAreaQuestion = document.getElementById("textarea-question");
+    var optionText = document.getElementById("optionText");
+
+    textAreaQuestion.value = "";
+    optionText.value = "";
+
+    var form = document.getElementById("form-questionOptions");
+    removeAllChilds(form);
 }
 
 function validateQuestion(taq) {
@@ -163,6 +242,7 @@ function validateQuestion(taq) {
 function buildJsonQuestion(schoolGrade, areas, text, imgsrcm, options) {
 
     var json = {
+        "id": generateID(),
         "grado": schoolGrade,
         "imagen": imgsrcm,
         "pregunta": text,
@@ -170,4 +250,42 @@ function buildJsonQuestion(schoolGrade, areas, text, imgsrcm, options) {
         "opciones": options
     };
     return json;
+}
+
+function removeAllChilds(parentNode) {
+    while (parentNode.firstChild) {
+        parentNode.removeChild(parentNode.firstChild);
+    }
+
+}
+
+function loadCollection() {
+    const newElement = EC.createElement_V2;
+    const ul = document.querySelector("#cq-collection");
+
+    removeAllChilds(ul);
+
+    customQuestionList.questions.forEach((element) => {
+        var li = newElement("li", {className: "collection-item"},
+                newElement("div", null, element.pregunta,
+                        newElement("a", {className: "secondary-content floatRight", href: "#!", onclick: confirmationModal.show.bind(confirmationModal, element.pregunta, element.id)},
+                                newElement("i", {className: "material-icons red-text"}, "close")
+                                ),
+                        newElement("a", {className: "secondary-content floatRight", href: "#!", onclick: editQuestion.bind(this, element.id)},
+                                newElement("i", {className: "material-icons blue-text"}, "edit")
+                                )
+                        )
+                );
+        ul.appendChild(li);
+    });
+}
+
+function editQuestion(id){
+    console.log("ID ",id)
+}
+
+function findQuestionByID(array, id){
+    return array.questions.find(elem=>{
+        return elem.id == id;
+    });
 }

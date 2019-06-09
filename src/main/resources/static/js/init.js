@@ -20,8 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     options = {dismissible: false};
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems, options);
-
-
+ 
     modalQuestionResult = M.Modal.getInstance(document.getElementById("modal-questionResult"));
     modalQuestionResult.showResult = function (flag) {
         let resultsDataSet = {
