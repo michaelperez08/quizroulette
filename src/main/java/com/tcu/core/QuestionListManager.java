@@ -8,6 +8,8 @@ package com.tcu.core;
 import com.tcu.entities.Question;
 import com.tcu.entities.QuestionList;
 import java.math.BigInteger;
+import java.util.Collections;
+import javafx.print.Collation;
 
 /**
  *
@@ -56,6 +58,17 @@ public class QuestionListManager {
             }
         }
         return removed;
+    }
+    
+    public boolean editFromQuestionList(Question editedQuestion){
+        boolean edited = false;
+        for(Question q: customQuestionList.getQuestionList()){
+            if(q.getId().intValue()==editedQuestion.getId().intValue()){
+                edited = Collections.replaceAll(customQuestionList.getQuestionList(), q, editedQuestion);
+                break;
+            }
+        }
+        return edited;
     }
 
 }

@@ -8,9 +8,9 @@ and open the template in the editor.
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
       xmlns:layout="http://localhost:8080/index">
-    <head>
+    <head id="">
         <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link href="css/MaterialIcons.css" rel="stylesheet"/>
 
         <link href="css/custom.css" rel="stylesheet"/>
 
@@ -22,8 +22,8 @@ and open the template in the editor.
     </head>
 
     <body>
-        
-        <div th:replace="fragments/nav :: nav"/>
+
+        <div id="game-navbar" th:replace="fragments/nav :: nav"/>
 
         <div id="init_game" class="section scrollspy block win_size ">
 
@@ -73,11 +73,11 @@ and open the template in the editor.
                     </div>
                     <div class="input-field col s12 m4 offset-m4 center">
                         <select multiple id="select-areas">
-                            <option value="algebra" selected>Rel. y Álgeb</option>
-                            <option value="estadistica" selected>Estad y Proba</option>
-                            <option value="geometria" selected>Geometría</option>
-                            <option value="medidas" selected>Medidas</option>
-                            <option value="numeros" selected>Números</option>
+                            <option value="algebra" disabled selected>Álgebra</option>
+                            <option value="estadistica" disabled selected>Estadística</option>
+                            <option value="geometria" disabled selected>Geometría</option>
+                            <option value="medidas" disabled selected>Medidas</option>
+                            <option value="numeros" disabled selected>Números</option>
                         </select>
                         <label>Area</label>
                     </div>
@@ -86,6 +86,14 @@ and open the template in the editor.
                         <label for="input-numberOfQuestions">Cantidad de preguntas</label>
                         <span class="helper-text" data-error="Excede el maximo de preguntas" data-success="Bien!">Maximo de preguntas 20</span>
                     </div>
+                    <div class="input-field inline s12 col m4 offset-m4">
+                        <p>
+                            <label>
+                                <input type="checkbox" id="checkbox-just-custom-list"/>
+                                <span>Jugar solo con la lista personal de preguntas</span>
+                            </label>
+                        </p>
+                    </div>
                     <div class="col s12 m4 offset-m4 center mt-50">
                         <a class="waves-effect waves-light btn" onclick="captureParameters()">Iniciar
                             <i class="material-icons right">play_arrow</i>
@@ -93,7 +101,6 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="row center">
-
                 </div>
                 <br/><br/>
 
@@ -165,7 +172,7 @@ and open the template in the editor.
         </div>
 
         <div class="fixed-action-btn">
-            <a class="btn-floating btn-large orange" href="#init_game">
+            <a class="btn-floating btn-large orange" href="/">
                 <i class="large material-icons">arrow_upward</i>
             </a>
         </div>
@@ -189,7 +196,7 @@ and open the template in the editor.
         <!--This 'a' tag its added to execute a scrollspy animation programmatically-->
         <a href="" id="scrollspy-helper"></a>
 
-        <script th:inline="javascript"> 
+        <script th:inline="javascript">
             var questionList = /*[[${ql}]]*/0;
             var customQuestionList = /*[[${cql}]]*/0;
         </script>    

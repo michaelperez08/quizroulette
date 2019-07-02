@@ -12,9 +12,9 @@ var roundData;
 
 var indexQuestion;
 
-function loadRouletteQuestions() {
+function loadRouletteQuestions(questions) {
     gameData = new Object();
-    questionList.questions.forEach(question => {
+    questions.forEach(question => {
         var grado = gameData[question.grado];
         if (grado == undefined) {
             gameData[question.grado] = new Object();
@@ -60,7 +60,7 @@ function checkAnswer() {
     if (currentSelectedOption != undefined) {
         var isTheCorrectAnswer = currentSelectedOption.respuestaCorrecta;
         if (isTheCorrectAnswer) {
-            roundData.correctAnswers = roundData.correctAnswers+1;
+            roundData.correctAnswers = roundData.correctAnswers + 1;
         } else {
             //TODO
         }
@@ -80,9 +80,9 @@ function nextQuestion() {
     if (indexQuestion < roundData.parameters.numberOfQuestions) {
         changeGameSection("question", "roullete");
     } else {
-        let num = (roundData.correctAnswers)/(roundData.parameters.numberOfQuestions)*100;
+        let num = (roundData.correctAnswers) / (roundData.parameters.numberOfQuestions) * 100;
         let score = Math.round(num * 100) / 100;
-        document.querySelector("#game-score").innerHTML = "Nota: "+score;
+        document.querySelector("#game-score").innerHTML = "Nota: " + score;
         doScrollSpy("#results");
     }
 }
@@ -91,8 +91,16 @@ function captureParameters(element) {
     var selectedGrade = document.querySelector('#select-schoolGrade').value;
     var selectedArea = document.querySelector('#select-areas').parentNode.querySelector('.select-dropdown').value;
     var numberOfQuestions = parseInt(document.querySelector('#input-numberOfQuestions').value);
+    var justCustomList = document.querySelector('#checkbox-just-custom-list').checked;
 
     var maxQuestions = document.querySelector('#input-numberOfQuestions').max;
+
+    if (justCustomList) {
+        loadRouletteQuestions(customQuestionList.questions);
+    } else {
+        loadRouletteQuestions(questionList.questions.concat(customQuestionList.questions));
+    }
+
     if (selectedGrade != '' && selectedArea != '' && !isNaN(numberOfQuestions)) {
 
         if (numberOfQuestions <= maxQuestions) {
@@ -107,10 +115,14 @@ function captureParameters(element) {
             roundData.questions = gameData[gameParameters.grade];
             roundData.correctAnswers = 0;
 
-            console.log(roundData);
-            indexQuestion = 0;
-            doScrollSpy('#questions');
-
+            if (roundData.questions != undefined) {
+                console.log(roundData);
+                indexQuestion = 0;
+                doScrollSpy('#questions');
+            }else{
+               showToast('No se econtraron preguntas para esos parametros!'); 
+            }
+            
         } else {
             showToast('No puede superar el número maximo de preguntas!');
         }
@@ -127,17 +139,17 @@ function loadQuestionByArea(area) {
     console.log(question);
 
     /*var n = document.getElementById("roullete-section");
-    n.classList.add("scale-out");*/
+     n.classList.add("scale-out");*/
 
     document.querySelector("#title-questionNumber").textContent = "Pregunta #" + indexQuestion;
     document.querySelector("#title-questionArea").textContent = ValueKey[question.area];
     document.querySelector("#span-questionText").textContent = question.pregunta;
-    
+
     let questionImgContainer = document.querySelector("#question-image-container");
-    if(question.imagen!=""){
+    if (question.imagen != "") {
         questionImgContainer.style.display = "block";
-        document.querySelector("#question-image").src = '../img/'+question.imagen;
-    }else{
+        document.querySelector("#question-image").src = '../img/' + question.imagen;
+    } else {
         questionImgContainer.style.display = "none";
     }
 
@@ -151,7 +163,7 @@ function loadQuestionByArea(area) {
     var elems = document.querySelectorAll('select');
     var instances = M.FormSelect.init(elems, null);
 
-    
+
     //hides the roulette
     setTimeout(function () {
         changeGameSection("roullete", "question");
@@ -163,7 +175,7 @@ function clearOptions(form) {
     var formQuestionOptions = form.children;
     let numberOfChilds = formQuestionOptions.length;
     if (formQuestionOptions != undefined) {
-        for (var i = numberOfChilds-1; i >= 0; i--) {
+        for (var i = numberOfChilds - 1; i >= 0; i--) {
             let child = formQuestionOptions[i];
             child.remove();
         }
@@ -204,6 +216,6 @@ function doScrollSpy(id) {
     a.click();
 }
 
-function reaload(){
+function reaload() {
     window.location.replace("/");
 }

@@ -64,8 +64,35 @@ public class GameController {
             QuestionDispatcher qd = new QuestionDispatcher();
             qd.saveListOnFile(QuestionListManager.getInstance().getCustomQuestionList());
             return new ResponseEntity<Object>(QuestionListManager.getInstance().getCustomQuestionList(), HttpStatus.OK);
-        }else{
+        } else {
             return new ResponseEntity<Object>(new String("El id no existe"), HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @RequestMapping(method = RequestMethod.POST, path = "/edit", produces = "application/json")
+    @ResponseBody
+    public ResponseEntity<Object> editQuestion(@RequestBody String jsonRequest, HttpServletRequest request) {
+        try {
+            JsonUtils jsonUtils = new JsonUtils();
+            Question question = jsonUtils.convertToObject(jsonRequest, Question.class);
+
+            boolean result = QuestionListManager.getInstance().editFromQuestionList(question);
+
+            if (result) {
+                QuestionDispatcher qd = new QuestionDispatcher();
+                qd.saveListOnFile(QuestionListManager.getInstance().getCustomQuestionList());
+            }
+
+            return new ResponseEntity<Object>(QuestionListManager.getInstance().getCustomQuestionList(), HttpStatus.OK);
+        } catch (JsonMappingException ex) {
+            Logger.getLogger(GameController.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        } catch (IOException ex) {
+            Logger.getLogger(GameController.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        } catch (Exception ex) {
+            Logger.getLogger(GameController.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
         }
     }
 

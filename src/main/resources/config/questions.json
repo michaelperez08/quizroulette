@@ -230,7 +230,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": " Relacione cada representación con el número correspondiente:   10 000 000 + 600 000 + 200 + 5",
-            "area": "Relaciones y algebra ",
+            "area": "algebra",
             "opciones":[
                 {"texto":"1 060 250 ","respuestaCorrecta":false},
                 {"texto":"10 006 025","respuestaCorrecta":false},
@@ -242,9 +242,9 @@
 		{
             "id": 20,
             "grado": "sexto",
-            "imagen": "grafica América central.PNG",
+            "imagen": "img/grafica América central.PNG",
             "pregunta": "Según los datos presentados en la gráfica de la derecha, ¿cuál es el país de América Central con mayor población en el 2018?",
-            "area": "Relaciones y algebra ",
+            "area": "algebra",
             "opciones":[
                 {"texto":"El Salvador","respuestaCorrecta":false},
                 {"texto":"Guatemala","respuestaCorrecta":true},
@@ -258,7 +258,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Escriba el número correspondiente a la escritura en letras: Un millón setecientos sesenta y cinco mil ochocientos nueve",
-            "area": "Relaciones y algebra",
+            "area": "algebra",
             "opciones":[
                 {"texto":"1 775 809","respuestaCorrecta":false},
                 {"texto":"1 765 899 ","respuestaCorrecta":false},
@@ -272,7 +272,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "una cadena de supermercados, que promueve una campaña para reducir la utilización de bolsas de plástico, anuncio que durante 2017 logro reducir en 2 702 563 la cantidad de bolsas entregadas a sus clientes. Si el siguiente año la cantidad fue de 3 048 241. ¿Cuál año presento una mayor reducción en la cantidad de bolsas entregadas?",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"Año 2017","respuestaCorrecta":false},
                 {"texto":"Año 2018","respuestaCorrecta":true},
@@ -286,7 +286,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija la respuesta correcta de la siguiente operación: 17-3x (8-4)+54÷2",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"32","respuestaCorrecta":true},
                 {"texto":"16","respuestaCorrecta":false},
@@ -300,7 +300,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija la respuesta correcta de la siguiente operación: 17-3x8-4+54÷2",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"16","respuestaCorrecta":false},
                 {"texto":" 32","respuestaCorrecta":true},
@@ -314,7 +314,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija la respuesta correcta de la siguiente operación: 180-32÷4+13",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"185","respuestaCorrecta":true},
                 {"texto":"50","respuestaCorrecta":false},
@@ -328,7 +328,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes operaciones de forma correcta: 250-125x (140+52-190)",
-            "area": " números ",
+            "area": "numeros",
             "opciones":[
                 {"texto":"0","respuestaCorrecta":true},
                 {"texto":"10","respuestaCorrecta":false},
@@ -342,7 +342,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Mateo tenía 66 bolinchas, pero perdió 3. Repartió la tercera parte de las que le quedaron entre sus 3 amigos. ¿Cuantas bolinchas le dio a cada amigo?  ",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"7","respuestaCorrecta":true},
                 {"texto":"63","respuestaCorrecta":false},
@@ -356,7 +356,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Un verdulero recibió 18kg de aguacates, 9 cajas de 4kg de tomates cada una, y 12 cajas de papas de 5kg cada una. ¿Cuántos kilogramos de verdura recibió? ",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"34kg","respuestaCorrecta":false},
                 {"texto":"27kg ","respuestaCorrecta":false},
@@ -370,7 +370,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Tres amigos recolectan limones. Carlos consiguió 36; Diana el doble de Carlos y Jaime, la mitad que Carlos. Si los reparten por igual. ¿Cuántos limones le corresponden a cada uno? ",
-            "area": " números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"42 limones ","respuestaCorrecta":true},
                 {"texto":"126 limones","respuestaCorrecta":false},
@@ -384,7 +384,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "En una expresión matemática, la variable que cambia de valor según el valor de la variable independiente se llama:",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"moda","respuestaCorrecta":false},
                 {"texto":"variable dependiente ","respuestaCorrecta":true},
@@ -398,7 +398,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Si dos o más fracciones poseen el mismo denominador reciben el nombre de fracciones:",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"homogéneas","respuestaCorrecta":true},
                 {"texto":"heterogenias","respuestaCorrecta":false},
@@ -412,7 +412,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija el símbolo <,> o = según corresponda 6 1/2    1 3/2",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"<","respuestaCorrecta":false},
                 {"texto":">","respuestaCorrecta":false},
@@ -426,7 +426,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija el símbolo <,> o = según corresponda 9/4    9/11",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"<","respuestaCorrecta":false},
                 {"texto":">","respuestaCorrecta":true},
@@ -440,7 +440,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija el símbolo <,> o = según corresponda 2/5    3/5",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"<","respuestaCorrecta":true},
                 {"texto":">","respuestaCorrecta":false},
@@ -454,7 +454,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija la opción correcta de la escritura del siguiente número con letras 1,7825 ",
-            "area": "números",
+            "area": "numeros",
             "opciones":[
                 {"texto":"un millón, siete mil ochocientas veinticinco diezmilésimas","respuestaCorrecta":false},
                 {"texto":"un entero, siete mil ochocientas veinticinco diezmilésimas ","respuestaCorrecta":true},
@@ -468,7 +468,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija la opción correcta de la escritura del siguiente número con letras 25,872",
-            "area": " números ",
+            "area": "numeros",
             "opciones":[
                 {"texto":"veinticinco enteros, ochocientas setenta y dos milésimas ","respuestaCorrecta":true},
                 {"texto":"doscientos cincuenta y ocho enteros, ochocientas setenta y dos milésimas ","respuestaCorrecta":false},
@@ -480,9 +480,9 @@
 		{
             "id": 37,
             "grado": "sexto",
-            "imagen": "paralelogramo.PNG",
+            "imagen": "img/paralelogramo.PNG",
             "pregunta": "¿Cuál es el nombre correcto de la siguiente figura geométrica?",
-            "area": "geometría ",
+            "area": "geometria",
             "opciones":[
                 {"texto":"cuadrado","respuestaCorrecta":false},
                 {"texto":"paralelogramo","respuestaCorrecta":true},
@@ -494,9 +494,9 @@
 		{
             "id": 38,
             "grado": "sexto",
-            "imagen": "rombo.PNG",
+            "imagen": "img/rombo.PNG",
             "pregunta": "¿Cuál es el nombre correcto de la siguiente figura geométrica?",
-            "area": "geometría ",
+            "area": "geometria",
             "opciones":[
                 {"texto":" ovalo","respuestaCorrecta":false},
                 {"texto":"rombo","respuestaCorrecta":true},
@@ -508,9 +508,9 @@
 		{
             "id": 39,
             "grado": "sexto",
-            "imagen": "triangulo.PNG",
+            "imagen": "img/triangulo.PNG",
             "pregunta": "¿Cuál es el nombre correcto de la siguiente figura geométrica?",
-            "area": "geometría",
+            "area": "geometria",
             "opciones":[
                 {"texto":"triangulo","respuestaCorrecta":true},
                 {"texto":"trapecio","respuestaCorrecta":false},
@@ -522,7 +522,7 @@
 		{
             "id": 40,
             "grado": "sexto",
-            "imagen": "mixto fracción.PNG",
+            "imagen": "img/mixtofracción.PNG",
             "pregunta": "¿Cuál es el número mixto que corresponde a la fracción representada?",
             "area": " ",
             "opciones":[
@@ -538,7 +538,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "¿Cuál es el resultado correcto de la siguiente operación? 450 ÷ 6 + 19 x 2 - 14",
-            "area": " numeros",
+            "area": "numeros",
             "opciones":[
                 {"texto":"105","respuestaCorrecta":false},
                 {"texto":"99","respuestaCorrecta":true},
@@ -748,7 +748,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El valor de m en la ecuación 45 + m = 96 es ",
-            "area": "relaciones y algebra",
+            "area": "algebra",
             "opciones":[
                 {"texto":"46","respuestaCorrecta":false},
                 {"texto":"51","respuestaCorrecta":true},
@@ -762,7 +762,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El valor de w en la ecuación 32 x w = 160 es",
-            "area": "relaciones y algebra ",
+            "area": "algebra",
             "opciones":[
                 {"texto":"5","respuestaCorrecta":true},
                 {"texto":"6","respuestaCorrecta":false},
@@ -873,7 +873,7 @@
             "id": 65,
             "grado": "sexto",
             "imagen": "",
-            "pregunta": "Observe los siguientes números: 2  3  5  10 ¿Cuál de ellos no es divisor de 100?",
+            "pregunta": "Observe los siguientes numeros: 2  3  5  10 ¿Cuál de ellos no es divisor de 100?",
             "area": "numeros",
             "opciones":[
                 {"texto":"2","respuestaCorrecta":false},
@@ -929,7 +929,7 @@
             "id": 69,
             "grado": "sexto",
             "imagen": "",
-            "pregunta": "¿Entre cuales números naturales se ubica la fracción 19/5  ?",
+            "pregunta": "¿Entre cuales numeros naturales se ubica la fracción 19/5  ?",
             "area": "numeros",
             "opciones":[
                 {"texto":"1y2","respuestaCorrecta":false},
@@ -998,9 +998,9 @@
 		{
             "id": 74,
             "grado": "sexto",
-            "imagen": "rombos.PNG",
+            "imagen": "img/rombos.PNG",
             "pregunta": "Si se considera la figura roja como la figura original, ¿Cómo se describe la translación aplicada?",
-            "area": "geometría",
+            "area": "geometria",
             "opciones":[
                 {"texto":"tres unidades a la derecha","respuestaCorrecta":false},
                 {"texto":"tres unidades a la izquierda","respuestaCorrecta":false},
@@ -1014,7 +1014,7 @@
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Si A representa el área, B la base mayor, b la base menor y h la altura, ¿cuál de esas letras corresponde a una variable dependiente?",
-            "area": "geometría",
+            "area": "geometria",
             "opciones":[
                 {"texto":"b","respuestaCorrecta":false},
                 {"texto":"A","respuestaCorrecta":true},
@@ -1040,9 +1040,9 @@
 		{
             "id": 77,
             "grado": "sexto",
-            "imagen": "grafica de trabajo.PNG",
-            "pregunta": "En la gráfica de la derecha se muestra la distribución de un grupo de voluntarios según el trabajo asignado. ¿Cuáles son las áreas de trabajo en las que se ubican cantidades similares de voluntarios? ",
-            "area": "Estadística y probabilidad",
+            "imagen": "img/graficadetrabajo.PNG",
+            "pregunta": "En la gráfica se muestra la distribución de un grupo de voluntarios según el trabajo asignado. ¿Cuáles son las áreas de trabajo en las que se ubican cantidades similares de voluntarios? ",
+            "area": "estadistica",
             "opciones":[
                 {"texto":"En la limpieza y en la cocina.","respuestaCorrecta":true},
                 {"texto":"En la Limpieza y en la organización.","respuestaCorrecta":false},

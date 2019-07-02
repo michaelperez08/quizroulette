@@ -38,6 +38,5 @@ document.addEventListener('DOMContentLoaded', function () {
         this.close();
         nextQuestion();
     };
-    loadRouletteQuestions();
 
 });

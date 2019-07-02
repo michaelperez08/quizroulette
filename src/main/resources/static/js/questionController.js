@@ -14,29 +14,29 @@ document.addEventListener('DOMContentLoaded', () => {
             this.ld.style.display = "none";
         }
     };
-    
+
     options = {dismissible: false};
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems, options);
-    
+
     confirmationModal = {
         cm: M.Modal.getInstance(document.getElementById("confirmation_modal")),
         text: document.getElementById("cm-text"),
         id: null,
         deleteButton: document.getElementById("cm-delete"),
-        show : function(text, id){
+        show: function (text, id) {
             this.text.innerHTML = text;
             this.cm.open();
             this.id = id;
         },
-        delete: function(){
+        delete: function () {
             deleteQuestionRequest(this.id);
         },
-        close: function(){
+        close: function () {
             this.cm.close();
         }
     }
-    
+
     loadCollection();
     axios.defaults.headers.get['Content-Type'] = 'application/json';
 });
@@ -52,6 +52,7 @@ var isSomeOptionSelected = false;
 const baseURL = "http://localhost:8080/";
 const saveQuestionURL = "quizroulette/questions/save";
 const deleteQuestionURL = "quizroulette/questions/delete/";
+const editQuestionURL = "quizroulette/questions/edit";
 
 function previewImage() {
     var preview = document.querySelector('#img-preview'); //selects the query named img
@@ -71,25 +72,30 @@ function previewImage() {
     }
 }
 
-function addQuestionOption() {
+function addQuestionOption(value = null, checked = false) {
     var option = document.querySelector("#optionText");
-    var optionText = option.value;
+    if (value) {
+        var optionText = value;
+    } else {
+        var optionText = option.value;
+    }
     if (verifyOption(optionText)) {
-        var newOption = createQuestionOption(optionText, 0);
+        var newOption = createQuestionOption(optionText, 0, checked);
         var form = document.querySelector("#form-questionOptions");
         form.appendChild(newOption);
-        optionList.push({texto: optionText, respuestaCorrecta: false});
+        optionList.push({texto: optionText, respuestaCorrecta: checked});
         option.value = "";
-    }
+}
 }
 
-function createQuestionOption(option, index) {
+function createQuestionOption(option, index, checked) {
     var p = EC.createElement('p', null, null, null);
     var label = EC.createElement('label', null, null, p);
-    var input = EC.createElement('input', {type: 'checkbox', onclick: function () {
+    var input = EC.createElement('input', {type: 'checkbox', checked: checked, onclick: function () {
             optionSelected(this);
         }, dataset: {text: option}}, null, label);
     var span = EC.createElement('span', null, option, label);
+    var i = EC.createElement("i", {className: "material-icons removeQuestionIcon red-text", onclick: removeQuestionOption.bind(this)}, "delete", p);
     return p;
 }
 
@@ -106,7 +112,7 @@ function optionSelected(optionInput) {
             inputOption.checked = false;
         }
     }
-    selectOptionList(optionInput.nextElementSibling.textContent)
+    selectOptionList(optionInput.nextElementSibling.textContent);
 }
 
 function selectOptionList(text) {
@@ -171,6 +177,38 @@ function saveQuestionRequest() {
     }
 }
 
+function editQuestionRequest(id){
+    var selectSchoolGrade = document.getElementById("select-schoolGrade");
+    var selectAreas = document.getElementById("select-areas");
+    var textAreaQuestion = document.getElementById("textarea-question");
+
+    if (validateQuestion(textAreaQuestion.value)) {
+        var jsonRequest = buildJsonQuestion(selectSchoolGrade.value, selectAreas.value, textAreaQuestion.value, imgSrc, optionList, id);
+        console.log(jsonRequest);
+
+        loadingDialogFullScreen.show();
+        axios.post(editQuestionURL, jsonRequest)
+                .then((response) => {
+                    loadingDialogFullScreen.dismis();
+                    console.log('question edited successfully');
+                    console.log(response);
+                    //
+                    if (response.status == 200) {
+                        customQuestionList.questions = response.data.questions;
+                        loadCollection();
+                        showMessage("Pregunta editada!");
+                        cleanNewQuestionForm();
+                    }
+                    loadingDialogFullScreen.dismis();
+                })
+                .catch((response) => {
+                    console.log('catch response', response);
+                    loadingDialogFullScreen.dismis();
+                    //error(response.status, response.data.description);
+                });
+    }
+}
+
 function deleteQuestionRequest(id) {
     loadingDialogFullScreen.show();
     axios.get(deleteQuestionURL + id)
@@ -213,6 +251,24 @@ function cleanNewQuestionForm() {
     var selectAreas = document.getElementById("select-areas");
     var textAreaQuestion = document.getElementById("textarea-question");
     var optionText = document.getElementById("optionText");
+    var inputFileName = document.getElementById("inputFileName");
+    var inputFile = document.getElementById("inputFile");
+    var editQuestion = document.getElementById("edit-question");
+    var addQuestion = document.getElementById("add-question");
+    var tabTitle = document.getElementById("tab-title");
+    
+    tabTitle.innerText = "Nueva Pregunta";
+    
+    editQuestion.style.display = "none";
+    addQuestion.style.display = "block";
+    
+    
+    optionList = [];
+    imgSrc = '';
+
+    inputFile.value = "";
+    inputFileName.value = "";
+    previewImage();
 
     textAreaQuestion.value = "";
     optionText.value = "";
@@ -225,7 +281,7 @@ function validateQuestion(taq) {
     let validate = false;
     if (taq) {
         if (optionList.length > 1) {
-            if (isSomeOptionSelected) {
+            if (isOptionSelected()) {
                 validate = true;
             } else {
                 showMessage("Debe selecionar una opción como correcta!")
@@ -239,10 +295,24 @@ function validateQuestion(taq) {
     return validate;
 }
 
-function buildJsonQuestion(schoolGrade, areas, text, imgsrcm, options) {
+function isOptionSelected(){
+    var result = false;
+    for (var i = 0; i < optionList.length; i++) {
+        const option = optionList[i];
+        if(option.respuestaCorrecta){
+            result = true;
+            break;
+        }
+    }
+    return result;
+}
 
+function buildJsonQuestion(schoolGrade, areas, text, imgsrcm, options, id = null) {
+    if(id==null){
+        id = generateID();
+    }
     var json = {
-        "id": generateID(),
+        "id": id,
         "grado": schoolGrade,
         "imagen": imgsrcm,
         "pregunta": text,
@@ -269,9 +339,9 @@ function loadCollection() {
         var li = newElement("li", {className: "collection-item"},
                 newElement("div", null, element.pregunta,
                         newElement("a", {className: "secondary-content floatRight", href: "#!", onclick: confirmationModal.show.bind(confirmationModal, element.pregunta, element.id)},
-                                newElement("i", {className: "material-icons red-text"}, "close")
+                                newElement("i", {className: "material-icons red-text"}, "delete")
                                 ),
-                        newElement("a", {className: "secondary-content floatRight", href: "#!", onclick: editQuestion.bind(this, element.id)},
+                        newElement("a", {className: "secondary-content floatRight", href: "#!", onclick: editQuestion.bind(this, element)},
                                 newElement("i", {className: "material-icons blue-text"}, "edit")
                                 )
                         )
@@ -280,12 +350,48 @@ function loadCollection() {
     });
 }
 
-function editQuestion(id){
-    console.log("ID ",id)
+function editQuestion(question) {
+    cleanNewQuestionForm();
+    
+    console.log("question ", question);
+    var instance = M.Tabs.getInstance(elem);
+
+    var selectSchoolGrade = document.getElementById("select-schoolGrade");
+    var selectAreas = document.getElementById("select-areas");
+    var textAreaQuestion = document.getElementById("textarea-question");
+    var imgPreview = document.getElementById("img-preview");
+    var editQuestion = document.getElementById("edit-question");
+    var addQuestion = document.getElementById("add-question");
+    var tabTitle = document.getElementById("tab-title");
+    
+    tabTitle.innerText = "Editar Pregunta";
+    
+    editQuestion.style.display = "block";
+    editQuestion.onclick = editQuestionRequest.bind(this, question.id);
+    addQuestion.style.display = "none";
+
+    if (question.imagen) {
+        imgPreview.src = question.imagen;
+        imgSrc = question.imagen;
+    }
+
+    selectSchoolGrade.value = question.grado;
+    selectAreas.value = question.area;
+    textAreaQuestion.value = question.pregunta;
+    
+    question.opciones.forEach(function (opcion) {
+        addQuestionOption(opcion.texto, opcion.respuestaCorrecta);
+    });
+
+    instance.select("test-swipe-1");
 }
 
-function findQuestionByID(array, id){
-    return array.questions.find(elem=>{
+function findQuestionByID(array, id) {
+    return array.questions.find(elem => {
         return elem.id == id;
     });
+}
+
+function removeQuestionOption(i) {
+    i.target.parentElement.remove();
 }

@@ -3,7 +3,7 @@
       xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link href="css/MaterialIcons.css" rel="stylesheet"/>
         <link href="css/questions.css" rel="stylesheet"/>
 
 
@@ -38,15 +38,15 @@
             <div class="row">
                 <div class="col s12">
                     <ul id="tabs-swipe-demo" class="tabs">
-                        <li class="tab col s6"><a href="#test-swipe-1" class="orange-text">Agregar Pregunta</a></li>
-                        <li class="tab col s6"><a href="#test-swipe-2" class="orange-text active">Lista de Preguntas</a></li>
+                        <li class="tab col s6"><a href="#test-swipe-1" class="orange-text active">Agregar Pregunta</a></li>
+                        <li class="tab col s6"><a href="#test-swipe-2" class="orange-text">Lista de Preguntas</a></li>
                     </ul>
                     <div id="test-swipe-1" class="col s12" style="height: 80vh">
                         <div class="col s12 m10 center-align offset-m1" style="margin-top:50px;">
-                            <h4 class="teal-text">Nueva Pregunta</h4>
+                            <h4 class="teal-text" id="tab-title">Nueva Pregunta</h4>
                             <div class="row">
-                                <div class="input-field col s12 m3 center offset-m3">
-                                    <select id="select-schoolGrade">
+                                <div class="input-field col s12 m3 center offset-m3 input-school-grade">
+                                    <select id="select-schoolGrade" class="browser-default">
                                         <option value="primero">Primero</option>
                                         <option value="segundo">Segundo</option>
                                         <option value="tercero">Tercero</option>
@@ -54,23 +54,21 @@
                                         <option value="quinto">Quinto</option>
                                         <option value="sexto">Sexto</option>
                                     </select>
-                                    <label>Grado</label>
                                 </div>
-                                <div class="input-field col s12 m3 center">
-                                    <select id="select-areas">
+                                <div class="input-field col s12 m3 center input-school-area">
+                                    <select id="select-areas" class="browser-default">
                                         <option value="algebra">Rel. y Álgeb</option>
                                         <option value="estadistica">Estad y Proba</option>
                                         <option value="geometria">Geometría</option>
                                         <option value="medidas">Medidas</option>
                                         <option value="numeros">Números</option>
                                     </select>
-                                    <label>Area</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12 m6 offset-m3">
-                                    <textarea id="textarea-question" class="materialize-textarea"></textarea>
-                                    <label for="textarea1">Pregunuta</label>
+                                    <textarea placeholder="Texto de la pregunta" id="textarea-question" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Pregunta</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -78,10 +76,10 @@
                                     <div class="file-field input-field">
                                         <div class="btn">
                                             <span>Imagen</span>
-                                            <input type="file">
+                                            <input id="inputFile" type="file">
                                         </div>
                                         <div class="file-path-wrapper">
-                                            <input class="file-path validate" onchange="previewImage()" type="text">
+                                            <input class="file-path validate" id="inputFileName" onchange="previewImage()" type="text">
                                         </div>
                                     </div>
                                 </div>
@@ -109,9 +107,14 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col s12 m6 offset-m3 right-align">
+                                <div class="col s12 m6 offset-m3 right-align" id="add-question">
                                     <button class="btn-large waves-effect waves-light orange" onclick="saveQuestionRequest()" type="submit" name="action">Guardar Pregunta
                                         <i class="material-icons right">save</i>
+                                    </button>
+                                </div>
+                                <div class="col s12 m6 offset-m3 right-align" style="display: none" id="edit-question">
+                                    <button class="btn-large waves-effect waves-light orange" type="submit" name="action">Modificar Pregunta
+                                        <i class="material-icons right">edit</i>
                                     </button>
                                 </div>
                             </div>
