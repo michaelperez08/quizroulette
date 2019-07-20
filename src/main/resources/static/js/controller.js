@@ -101,33 +101,55 @@ function captureParameters(element) {
         loadRouletteQuestions(questionList.questions.concat(customQuestionList.questions));
     }
 
-    if (selectedGrade != '' && selectedArea != '' && !isNaN(numberOfQuestions)) {
+    if (gameData[selectedGrade]) {
 
-        if (numberOfQuestions <= maxQuestions) {
+        if (selectedGrade != '' && selectedArea != '' && !isNaN(numberOfQuestions)) {
 
-            gameParameters = {};
-            gameParameters['grade'] = selectedGrade;
-            gameParameters['area'] = selectedArea;
-            gameParameters['numberOfQuestions'] = numberOfQuestions;
+            if (selectedArea.split(", ").length > 1) {
 
-            roundData = new Object();
-            roundData.parameters = gameParameters;
-            roundData.questions = gameData[gameParameters.grade];
-            roundData.correctAnswers = 0;
+                if (numberOfQuestions <= maxQuestions) {
 
-            if (roundData.questions != undefined) {
-                console.log(roundData);
-                indexQuestion = 0;
-                doScrollSpy('#questions');
-            }else{
-               showToast('No se econtraron preguntas para esos parametros!'); 
+                    gameParameters = {};
+                    gameParameters['grade'] = selectedGrade;
+                    gameParameters['area'] = selectedArea;
+                    gameParameters['numberOfQuestions'] = numberOfQuestions;
+
+                    roundData = new Object();
+                    roundData.parameters = gameParameters;
+
+                    roundData.questions = {};
+                    gameParameters.area.split(", ").forEach(function (a) {
+                        let areaQuestions = gameData[gameParameters.grade][KeyValue[a]];
+                        if (areaQuestions) {
+                            roundData.questions[KeyValue[a]] = areaQuestions;
+                        }
+                    });
+                    roundData.correctAnswers = 0;
+
+                    iniciarRuleta();
+                    if (Object.keys(roundData.questions).length == gameParameters.area.split(", ").length) {
+                        if (roundData.questions != undefined) {
+                            console.log(roundData);
+                            indexQuestion = 0;
+                            doScrollSpy('#questions');
+                        } else {
+                            showToast('No se econtraron preguntas para esos parametros!');
+                        }
+                    } else {
+                        showToast('El grado ' + gameParameters.grade + ' solo posee preguntas para las area(s) \n' + Object.keys(roundData.questions).toString());
+                    }
+
+                } else {
+                    showToast('No puede superar el número maximo de preguntas!');
+                }
+            } else {
+                showToast('No puede seleccionar menos de dos areas!');
             }
-            
         } else {
-            showToast('No puede superar el número maximo de preguntas!');
+            showToast('Faltan parametros!');
         }
-    } else {
-        showToast('Faltan parametros!');
+    }else {
+        showToast('No existen preguntas para '+selectedGrade+' grado');
     }
 }
 

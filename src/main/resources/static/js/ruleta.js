@@ -1,41 +1,61 @@
 var segmentoSeleccionado;
 var KeyValue = {
-    Números:'numeros',
-    Geometría:'geometria',
-    Álgebra:'algebra',
-    Medidas:'medidas',
-    Estadística:'estadistica'
+    Números: 'numeros',
+    Geometría: 'geometria',
+    Álgebra: 'algebra',
+    Medidas: 'medidas',
+    Estadística: 'estadistica'
 };
 var ValueKey = {
-    numeros:'Números',
-    geometria:'Geometría',
-    algebra:'Álgebra',
-    medidas:'Medidas',
-    estadistica:'Estadística'
+    numeros: 'Números',
+    geometria: 'Geometría',
+    algebra: 'Álgebra',
+    medidas: 'Medidas',
+    estadistica: 'Estadística'
 };
-var miRuleta = new Winwheel({
-    'numSegments': 5,
-    'outerRadius': 170,
-    'segments': [
-        {'fillStyle': '#f1c40f', 'text': 'Números'},
-        {'fillStyle': '#2ecc71', 'text': 'Geometría'},
-        {'fillStyle': '#e67e22', 'text': 'Álgebra'},
-        {'fillStyle': '#e74c3c', 'text': 'Medidas'},
-        {'fillStyle': '#8e44ad', 'text': 'Estadística'},
-    ],
-    'animation': {
-        'type': 'spinToStop',
-        'duration': 5,
-        'callbackFinished': 'Mensaje()',
-        'callbackAfter': 'dibujarIndicador()'
-    }
-});
+
+var segments = [
+    {'fillStyle': '#f1c40f', 'text': 'Números'},
+    {'fillStyle': '#2ecc71', 'text': 'Geometría'},
+    {'fillStyle': '#e67e22', 'text': 'Álgebra'},
+    {'fillStyle': '#e74c3c', 'text': 'Medidas'},
+    {'fillStyle': '#8e44ad', 'text': 'Estadística'}
+];
+
+var miRuleta = null;
+
+function iniciarRuleta() {
+    let roundSegments = getSegmentsByText(gameParameters.area);
+    miRuleta = new Winwheel({
+        'numSegments': roundSegments.length,
+        'outerRadius': 170,
+        'segments': roundSegments,
+        'animation': {
+            'type': 'spinToStop',
+            'duration': 5,
+            'callbackFinished': 'Mensaje()',
+            'callbackAfter': 'dibujarIndicador()'
+        }
+    });
+}
+
+function getSegmentsByText(texts) {
+    var result = [];
+    texts.split(", ").forEach(function (text) {
+        var sg = segments.find(function (segment) {
+            return segment.text == text;
+        });
+        result.push(sg);
+    });
+    return result;
+}
+
 function Mensaje() {
     segmentoSeleccionado = miRuleta.getIndicatedSegment();
     //cargarPregunta(SegmentoSeleccionado.text);
     console.log("Elemento seleccionado: " + segmentoSeleccionado.text + "!");
     //Reinicio de la ruleta (valor inicial) 
-    
+
     loadQuestionByArea(KeyValue[segmentoSeleccionado.text]);
 }
 
@@ -45,8 +65,6 @@ function resetearRuleta() {
     miRuleta.draw();
     dibujarIndicador();
 }
-
-dibujarIndicador();
 
 function dibujarIndicador() {
     var ctx = miRuleta.ctx;
