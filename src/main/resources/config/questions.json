@@ -3,14 +3,26 @@
         {
             "id": 1,
             "grado": "sexto",
-            "imagen": "img/graficoDeudaExterna.jpg",
+            "imagen": "graficoDeudaExterna.jpg",
             "pregunta": "¿En que año Costa Rica tuvo la mayor deuda externa?",
             "area": "numeros",
-            "opciones":[
-                {"texto":"2005","respuestaCorrecta":false},
-                {"texto":"2011","respuestaCorrecta":false},
-                {"texto":"2009","respuestaCorrecta":true},
-                {"texto":"2003","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "2005",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "2011",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "2009",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "2003",
+                    "respuestaCorrecta": false
+                }
             ]
         },
         {
@@ -19,11 +31,23 @@
             "imagen": "",
             "pregunta": " El papá de Melanie va a la verdulería y compra 5 manzanas, 3 peras y 10 bananos. Los precios a pagar por cada producto son ₡250, ₡400 y ₡40 respectivamente. ¿Cuál fue la cantidad de dinero que pagó el papá de Melanie?",
             "area": "numeros",
-            "opciones":[
-                {"texto":"2750","respuestaCorrecta":false},
-                {"texto":"2850","respuestaCorrecta":true},
-                {"texto":"1500","respuestaCorrecta":false},
-                {"texto":"1975","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "2750",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "2850",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "1500",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "1975",
+                    "respuestaCorrecta": false
+                }
             ]
         },
         {
@@ -32,11 +56,23 @@
             "imagen": "",
             "pregunta": "Soy un número de 5 dígitos. Soy múltiplo de 1000. Mi dígito en las decenas de millar es factor de 2. ¿Qué número soy?",
             "area": "numeros",
-            "opciones":[
-                {"texto":"20000","respuestaCorrecta":true},
-                {"texto":"2000","respuestaCorrecta":false},
-                {"texto":"2500","respuestaCorrecta":false},
-                {"texto":"25000","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "20000",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "2000",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "2500",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "25000",
+                    "respuestaCorrecta": false
+                }
             ]
         },
         {
@@ -45,37 +81,73 @@
             "imagen": "",
             "pregunta": "Felipe y Anita disfrutan de todo, del sol en las dulces mañanas del verano y de la lluvia en el invierno. Una de las ventanas de la casa tiene dos puertitas rectangulares, de alto 80 cm y ancho 50 cm ¿ Cuál es el área total de la Ventana?",
             "area": "geometria",
-            "opciones":[
-                {"texto":"5000","respuestaCorrecta":false},
-                {"texto":"8000","respuestaCorrecta":true},
-                {"texto":"7800","respuestaCorrecta":false},
-                {"texto":"800","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "5000",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "8000",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "7800",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "800",
+                    "respuestaCorrecta": false
+                }
             ]
         },
         {
             "id": 5,
             "grado": "sexto",
-            "imagen": "img/edificiosCuadrilatero.jpg",
+            "imagen": "edificiosCuadrilatero.jpg",
             "pregunta": "Elena tiene un hijo que va a la escuela, de la casa a la escuela hay 1000 m. Esa, también, es la distancia entre la Biblioteca Pública y el Banco. El jueves va por su hijo a la escuela, pero, después irán a la Biblioteca Pública, que queda a 500 m de la escuela. Al salir de la Biblioteca deben ir al Banco, para luego ir a la casa. La disposición de tales edificios es así ¿Cuál es el perímetro del cuadrilátero descrito?",
             "area": "geometria",
-            "opciones":[
-                {"texto":"3000","respuestaCorrecta":true},
-                {"texto":"2000","respuestaCorrecta":false},
-                {"texto":"1500","respuestaCorrecta":false},
-                {"texto":"2500","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "3000",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "2000",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "1500",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "2500",
+                    "respuestaCorrecta": false
+                }
             ]
         },
         {
             "id": 6,
             "grado": "sexto",
-            "imagen": "img/tablaPreciosProductos.jpg",
+            "imagen": "tablaPreciosProductos.jpg",
             "pregunta": ".Una ensalada requiere de ½ kg de pepino, 750 g de tomate, 1 lechuga criolla, 100 g de zanahoria rallada y 50 g de cebolla. La siguiente tabla proporciona los precios en colones de estos ingredientes. ¿Cuánto cuesta el total de los ingredientes de la ensalada?",
             "area": "medidas",
-            "opciones":[
-                {"texto":"1565","respuestaCorrecta":false},
-                {"texto":"1190","respuestaCorrecta":false},
-                {"texto":"1172,5","respuestaCorrecta":true},
-                {"texto":"1426,5","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "1565",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "1190",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "1172,5",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "1426,5",
+                    "respuestaCorrecta": false
+                }
             ]
         },
         {
@@ -84,11 +156,23 @@
             "imagen": "",
             "pregunta": "El costo de ½ kg de queso es de ₡1000, el de 1 kg ₡2000, el de 1½ kg ₡3000. ¿Qué relación existe entre los kilogramos de queso y su costo?",
             "area": "algebra",
-            "opciones":[
-                {"texto":"Cada kg vale ₡1000.","respuestaCorrecta":false},
-                {"texto":"Cada ½ kg vale ₡1000.","respuestaCorrecta":true},
-                {"texto":"Se pueden comprar 2 kg por ₡3000.","respuestaCorrecta":false},
-                {"texto":"Cada colón equivale a un kg.","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "Cada kg vale ₡1000.",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "Cada ½ kg vale ₡1000.",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "Se pueden comprar 2 kg por ₡3000.",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "Cada colón equivale a un kg.",
+                    "respuestaCorrecta": false
+                }
             ]
         },
         {
@@ -97,11 +181,23 @@
             "imagen": "",
             "pregunta": "¿Cuál es el valor de la letra n en la siguiente expresión?. 81/ n = 9.",
             "area": "algebra",
-            "opciones":[
-                {"texto":"6","respuestaCorrecta":false},
-                {"texto":"10","respuestaCorrecta":false},
-                {"texto":"21","respuestaCorrecta":false},
-                {"texto":"9","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "6",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "10",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "21",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "9",
+                    "respuestaCorrecta": true
+                }
             ]
         },
         {
@@ -110,1269 +206,2016 @@
             "imagen": "",
             "pregunta": "En una bolsa de arroz de dos kilogramos se indica que contiene el 95% de granos enteros, pero no estamos seguros de que sea así. ¿Qué estrategia podemos utilizar para averiguar si la afirmación es cierta?",
             "area": "estadistica",
-            "opciones":[
-                {"texto":"Media","respuestaCorrecta":false},
-                {"texto":"Muestreo ","respuestaCorrecta":true},
-                {"texto":"Moda","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "Media",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "Muestreo ",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "Moda",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		{
+        {
             "id": 10,
             "grado": "sexto",
-            "imagen": "img/mayorpobAC.PNG",
+            "imagen": "mayorpobAC.PNG",
             "pregunta": "Según los datos presentados en la gráfica ¿cuál es el país de América Central con mayor población en 2018?",
             "area": "numeros",
-            "opciones":[
-                {"texto":"El Salvador","respuestaCorrecta":false},
-                {"texto":"Guatemala ","respuestaCorrecta":true},
-                {"texto":"Honduras","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "El Salvador",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "Guatemala ",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "Honduras",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		{
+        {
             "id": 11,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "¿Cuál es el siguiente número escrito en letras? 5 000 001",
             "area": "numeros",
-            "opciones":[
-                {"texto":"Cinco millones uno","respuestaCorrecta":true},
-                {"texto":"Cinco mil cien ","respuestaCorrecta":false},
-                {"texto":"Cinco millones diez","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "Cinco millones uno",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "Cinco mil cien ",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "Cinco millones diez",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		{
+        {
             "id": 12,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "¿Relacione la siguiente representación con el número correspondiente? 1UMi+6CM+2D+5U",
             "area": "numeros",
-            "opciones":[
-                {"texto":"1 600 250","respuestaCorrecta":false},
-                {"texto":"10 600 205","respuestaCorrecta":false},
-                {"texto":"1 600 025","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "1 600 250",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "10 600 205",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "1 600 025",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		{
+        {
             "id": 13,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "¿Cuál número representa la siguiente escritura en letras? Un millón setecientos sesenta y cinco mil ochocientos nueve",
             "area": "numeros",
-            "opciones":[
-                {"texto":"1 775 809","respuestaCorrecta":true},
-                {"texto":"107 809","respuestaCorrecta":false},
-                {"texto":"1 778 509","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "1 775 809",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "107 809",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "1 778 509",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		{
+        {
             "id": 14,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Una empresa reportó ingresos cercanos a los veintiocho millones de colones, pero tuvo gastos de casi veinticuatro millones. Entonces, ¿cuál fue aproximadamente la ganancia de la empresa?",
             "area": "numeros",
-            "opciones":[
-                {"texto":"8 000 000","respuestaCorrecta":false},
-                {"texto":"4 000 000","respuestaCorrecta":true},
-                {"texto":"6 000 000","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "8 000 000",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "4 000 000",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "6 000 000",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		{
+        {
             "id": 15,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Una cadena de supermercados, que promueve una campaña para reducir la utilización de bolsas de plástico, anunció que durante 2017 logró reducir en 2 702 563 la cantidad de bolsas entregadas a sus clientes. Si el siguiente año la cantidad fue de 3 048 241 ¿cuál año presentó una mayor cantidad en las bolsas entregadas?",
             "area": "numeros",
-            "opciones":[
-                {"texto":"2017","respuestaCorrecta":false},
-                {"texto":"2018","respuestaCorrecta":true},
-                {"texto":"2016","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "2017",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "2018",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "2016",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		{
+        {
             "id": 16,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Escoja la primera opción que se debe resolver primero en este caso: 146 - 65 + 32 x 4",
             "area": "numeros",
-            "opciones":[
-                {"texto":"32 x 4","respuestaCorrecta":true},
-                {"texto":"146 -65","respuestaCorrecta":false},
-                {"texto":"65 + 32","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "32 x 4",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "146 -65",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "65 + 32",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-				{
+        {
             "id": 17,
             "grado": "sexto",
-            "imagen": "img/errorOp1.png",
+            "imagen": "errorOp1.png",
             "pregunta": "¿Cuál es el resultado de la siguiente operación? 17 - 3 x(8-4)+ 54 ÷ 2",
             "area": "numeros",
-            "opciones":[
-                {"texto":"32","respuestaCorrecta":true},
-                {"texto":"22","respuestaCorrecta":false},
-                {"texto":"28","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "32",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "22",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "28",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		{
+        {
             "id": 18,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "David empleó 40 minutos para almorzar, el triple para ayudar en las labores del hogar y 30 minutos para leer. ¿ Cuántos minutos empleó en total en estas 3 actividades?",
             "area": "medidas",
-            "opciones":[
-                {"texto":"160","respuestaCorrecta":false},
-                {"texto":"120","respuestaCorrecta":false},
-                {"texto":"190","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "160",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "120",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "190",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		{
+
+        {
             "id": 19,
             "grado": "sexto",
             "imagen": "",
             "pregunta": " Relacione cada representación con el número correspondiente:   10 000 000 + 600 000 + 200 + 5",
             "area": "algebra",
-            "opciones":[
-                {"texto":"1 060 250 ","respuestaCorrecta":false},
-                {"texto":"10 006 025","respuestaCorrecta":false},
-                {"texto":"1 600 205","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "1 060 250 ",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "10 006 025",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "1 600 205",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		  
-		 
-		{
+
+        {
             "id": 20,
             "grado": "sexto",
-            "imagen": "img/grafica América central.PNG",
+            "imagen": "grafica América central.PNG",
             "pregunta": "Según los datos presentados en la gráfica de la derecha, ¿cuál es el país de América Central con mayor población en el 2018?",
             "area": "algebra",
-            "opciones":[
-                {"texto":"El Salvador","respuestaCorrecta":false},
-                {"texto":"Guatemala","respuestaCorrecta":true},
-                {"texto":"Honduras","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "El Salvador",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "Guatemala",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "Honduras",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		  
-		 
-		{
+
+        {
             "id": 21,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Escriba el número correspondiente a la escritura en letras: Un millón setecientos sesenta y cinco mil ochocientos nueve",
             "area": "algebra",
-            "opciones":[
-                {"texto":"1 775 809","respuestaCorrecta":false},
-                {"texto":"1 765 899 ","respuestaCorrecta":false},
-                {"texto":"1 765 809","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "1 775 809",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "1 765 899 ",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "1 765 809",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 22,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "una cadena de supermercados, que promueve una campaña para reducir la utilización de bolsas de plástico, anuncio que durante 2017 logro reducir en 2 702 563 la cantidad de bolsas entregadas a sus clientes. Si el siguiente año la cantidad fue de 3 048 241. ¿Cuál año presento una mayor reducción en la cantidad de bolsas entregadas?",
             "area": "numeros",
-            "opciones":[
-                {"texto":"Año 2017","respuestaCorrecta":false},
-                {"texto":"Año 2018","respuestaCorrecta":true},
-                {"texto":"Año 2019","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "Año 2017",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "Año 2018",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "Año 2019",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 23,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija la respuesta correcta de la siguiente operación: 17-3x (8-4)+54÷2",
             "area": "numeros",
-            "opciones":[
-                {"texto":"32","respuestaCorrecta":true},
-                {"texto":"16","respuestaCorrecta":false},
-                {"texto":" 56","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "32",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "16",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": " 56",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 24,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija la respuesta correcta de la siguiente operación: 17-3x8-4+54÷2",
             "area": "numeros",
-            "opciones":[
-                {"texto":"16","respuestaCorrecta":false},
-                {"texto":" 32","respuestaCorrecta":true},
-                {"texto":" 24","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "16",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": " 32",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": " 24",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 25,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija la respuesta correcta de la siguiente operación: 180-32÷4+13",
             "area": "numeros",
-            "opciones":[
-                {"texto":"185","respuestaCorrecta":true},
-                {"texto":"50","respuestaCorrecta":false},
-                {"texto":"235","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "185",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "50",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "235",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 26,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes operaciones de forma correcta: 250-125x (140+52-190)",
             "area": "numeros",
-            "opciones":[
-                {"texto":"0","respuestaCorrecta":true},
-                {"texto":"10","respuestaCorrecta":false},
-                {"texto":"100","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "0",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "10",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "100",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 27,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Mateo tenía 66 bolinchas, pero perdió 3. Repartió la tercera parte de las que le quedaron entre sus 3 amigos. ¿Cuantas bolinchas le dio a cada amigo?  ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"7","respuestaCorrecta":true},
-                {"texto":"63","respuestaCorrecta":false},
-                {"texto":"21","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "7",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "63",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "21",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 28,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Un verdulero recibió 18kg de aguacates, 9 cajas de 4kg de tomates cada una, y 12 cajas de papas de 5kg cada una. ¿Cuántos kilogramos de verdura recibió? ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"34kg","respuestaCorrecta":false},
-                {"texto":"27kg ","respuestaCorrecta":false},
-                {"texto":"114kg","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "34kg",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "27kg ",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "114kg",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		  
-		 
-		{
+
+        {
             "id": 29,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Tres amigos recolectan limones. Carlos consiguió 36; Diana el doble de Carlos y Jaime, la mitad que Carlos. Si los reparten por igual. ¿Cuántos limones le corresponden a cada uno? ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"42 limones ","respuestaCorrecta":true},
-                {"texto":"126 limones","respuestaCorrecta":false},
-                {"texto":"111 limones ","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "42 limones ",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "126 limones",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "111 limones ",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 30,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "En una expresión matemática, la variable que cambia de valor según el valor de la variable independiente se llama:",
             "area": "numeros",
-            "opciones":[
-                {"texto":"moda","respuestaCorrecta":false},
-                {"texto":"variable dependiente ","respuestaCorrecta":true},
-                {"texto":"heterogéneas","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "moda",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "variable dependiente ",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "heterogéneas",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 31,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Si dos o más fracciones poseen el mismo denominador reciben el nombre de fracciones:",
             "area": "numeros",
-            "opciones":[
-                {"texto":"homogéneas","respuestaCorrecta":true},
-                {"texto":"heterogenias","respuestaCorrecta":false},
-                {"texto":"moda","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "homogéneas",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "heterogenias",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "moda",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 32,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija el símbolo <,> o = según corresponda 6 1/2    1 3/2",
             "area": "numeros",
-            "opciones":[
-                {"texto":"<","respuestaCorrecta":false},
-                {"texto":">","respuestaCorrecta":false},
-                {"texto":"=","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "<",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": ">",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "=",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 33,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija el símbolo <,> o = según corresponda 9/4    9/11",
             "area": "numeros",
-            "opciones":[
-                {"texto":"<","respuestaCorrecta":false},
-                {"texto":">","respuestaCorrecta":true},
-                {"texto":"=","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "<",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": ">",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "=",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 34,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija el símbolo <,> o = según corresponda 2/5    3/5",
             "area": "numeros",
-            "opciones":[
-                {"texto":"<","respuestaCorrecta":true},
-                {"texto":">","respuestaCorrecta":false},
-                {"texto":"=","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "<",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": ">",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "=",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 35,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija la opción correcta de la escritura del siguiente número con letras 1,7825 ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"un millón, siete mil ochocientas veinticinco diezmilésimas","respuestaCorrecta":false},
-                {"texto":"un entero, siete mil ochocientas veinticinco diezmilésimas ","respuestaCorrecta":true},
-                {"texto":"un entero, siete mil ochocientas veinticinco ","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "un millón, siete mil ochocientas veinticinco diezmilésimas",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "un entero, siete mil ochocientas veinticinco diezmilésimas ",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "un entero, siete mil ochocientas veinticinco ",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 36,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija la opción correcta de la escritura del siguiente número con letras 25,872",
             "area": "numeros",
-            "opciones":[
-                {"texto":"veinticinco enteros, ochocientas setenta y dos milésimas ","respuestaCorrecta":true},
-                {"texto":"doscientos cincuenta y ocho enteros, ochocientas setenta y dos milésimas ","respuestaCorrecta":false},
-                {"texto":"veinticinco milésimas, ochocientas setenta y dos","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "veinticinco enteros, ochocientas setenta y dos milésimas ",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "doscientos cincuenta y ocho enteros, ochocientas setenta y dos milésimas ",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "veinticinco milésimas, ochocientas setenta y dos",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 37,
             "grado": "sexto",
-            "imagen": "img/paralelogramo.PNG",
+            "imagen": "paralelogramo.PNG",
             "pregunta": "¿Cuál es el nombre correcto de la siguiente figura geométrica?",
             "area": "geometria",
-            "opciones":[
-                {"texto":"cuadrado","respuestaCorrecta":false},
-                {"texto":"paralelogramo","respuestaCorrecta":true},
-                {"texto":"rectángulo","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "cuadrado",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "paralelogramo",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "rectángulo",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 38,
             "grado": "sexto",
-            "imagen": "img/rombo.PNG",
+            "imagen": "rombo.PNG",
             "pregunta": "¿Cuál es el nombre correcto de la siguiente figura geométrica?",
             "area": "geometria",
-            "opciones":[
-                {"texto":" ovalo","respuestaCorrecta":false},
-                {"texto":"rombo","respuestaCorrecta":true},
-                {"texto":"triangulo ","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": " ovalo",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "rombo",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "triangulo ",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 39,
             "grado": "sexto",
-            "imagen": "img/triangulo.PNG",
+            "imagen": "triangulo.PNG",
             "pregunta": "¿Cuál es el nombre correcto de la siguiente figura geométrica?",
             "area": "geometria",
-            "opciones":[
-                {"texto":"triangulo","respuestaCorrecta":true},
-                {"texto":"trapecio","respuestaCorrecta":false},
-                {"texto":"círculo","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "triangulo",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "trapecio",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "círculo",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 40,
             "grado": "sexto",
-            "imagen": "img/mixtofracción.PNG",
+            "imagen": "mixtofracción.PNG",
             "pregunta": "¿Cuál es el número mixto que corresponde a la fracción representada?",
             "area": " ",
-            "opciones":[
-                {"texto":"12/7","respuestaCorrecta":false},
-                {"texto":"2 2/7","respuestaCorrecta":true},
-                {"texto":"7 2/7","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "12/7",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "2 2/7",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "7 2/7",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 41,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "¿Cuál es el resultado correcto de la siguiente operación? 450 ÷ 6 + 19 x 2 - 14",
             "area": "numeros",
-            "opciones":[
-                {"texto":"105","respuestaCorrecta":false},
-                {"texto":"99","respuestaCorrecta":true},
-                {"texto":"89","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "105",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "99",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "89",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 42,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes combinaciones de operaciones 8 x (12 ÷ 4 + 50) – 100 ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"324","respuestaCorrecta":true},
-                {"texto":"335","respuestaCorrecta":false},
-                {"texto":"314","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "324",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "335",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "314",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 43,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes combinaciones de operaciones (92 + 133) ÷ (3 x 5)",
             "area": "numeros",
-            "opciones":[
-                {"texto":"10","respuestaCorrecta":false},
-                {"texto":"15","respuestaCorrecta":true},
-                {"texto":"18","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "10",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "15",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "18",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 44,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes combinaciones de operaciones 120 ÷ 10 x (40 – 3)",
             "area": "numeros",
-            "opciones":[
-                {"texto":"245","respuestaCorrecta":false},
-                {"texto":"444","respuestaCorrecta":true},
-                {"texto":"342","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "245",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "444",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "342",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 45,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes combinaciones de operaciones (180 – 32) ÷ 4 + 13",
             "area": "numeros",
-            "opciones":[
-                {"texto":"50","respuestaCorrecta":true},
-                {"texto":"65","respuestaCorrecta":false},
-                {"texto":"65","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "50",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "65",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "65",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 46,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente operación 8 x 14 ÷ 4 + 250 - 100",
             "area": "numeros",
-            "opciones":[
-                {"texto":"228","respuestaCorrecta":false},
-                {"texto":"317","respuestaCorrecta":true},
-                {"texto":"415","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "228",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "317",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "415",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 47,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente operación 420 ÷ 10 x 3-40",
             "area": "numeros",
-            "opciones":[
-                {"texto":"86","respuestaCorrecta":true},
-                {"texto":"120","respuestaCorrecta":false},
-                {"texto":"98","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "86",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "120",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "98",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 48,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente operación (17-3) x (8-4) +54÷2",
             "area": "numeros",
-            "opciones":[
-                {"texto":"80","respuestaCorrecta":false},
-                {"texto":"85","respuestaCorrecta":false},
-                {"texto":"83","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "80",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "85",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "83",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 49,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente operación (17-3) x 8-4 +54÷2",
             "area": "numeros",
-            "opciones":[
-                {"texto":"135","respuestaCorrecta":true},
-                {"texto":"130","respuestaCorrecta":false},
-                {"texto":"134","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "135",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "130",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "134",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 50,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente operación 670 ÷ 10 000 =",
             "area": "numeros",
-            "opciones":[
-                {"texto":"0,67","respuestaCorrecta":false},
-                {"texto":"0,067","respuestaCorrecta":true},
-                {"texto":"0,0067","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "0,67",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "0,067",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "0,0067",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 51,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente operación 670 ÷ 10 =",
             "area": "numeros",
-            "opciones":[
-                {"texto":"67","respuestaCorrecta":true},
-                {"texto":"6,7","respuestaCorrecta":false},
-                {"texto":"0,67","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "67",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "6,7",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "0,67",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 52,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente operación 0,67 x 1000 =",
             "area": "numeros",
-            "opciones":[
-                {"texto":"67","respuestaCorrecta":true},
-                {"texto":"6,7","respuestaCorrecta":false},
-                {"texto":"0,67","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "67",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "6,7",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "0,67",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 53,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente operación 0,67 x 1000 =",
             "area": "numeros",
-            "opciones":[
-                {"texto":"670","respuestaCorrecta":true},
-                {"texto":"6,7","respuestaCorrecta":true},
-                {"texto":"0,67","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "670",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "6,7",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "0,67",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 54,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente operación 0,67 x 100= ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"0,67","respuestaCorrecta":false},
-                {"texto":"670","respuestaCorrecta":false},
-                {"texto":"67","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "0,67",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "670",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "67",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 55,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente operación 0,67 x 10 =",
             "area": " ",
-            "opciones":[
-                {"texto":"6.7","respuestaCorrecta":true},
-                {"texto":"0,067","respuestaCorrecta":false},
-                {"texto":"6,7","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "6.7",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "0,067",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "6,7",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 56,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El valor de m en la ecuación 45 + m = 96 es ",
             "area": "algebra",
-            "opciones":[
-                {"texto":"46","respuestaCorrecta":false},
-                {"texto":"51","respuestaCorrecta":true},
-                {"texto":"141","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "46",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "51",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "141",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 57,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El valor de w en la ecuación 32 x w = 160 es",
             "area": "algebra",
-            "opciones":[
-                {"texto":"5","respuestaCorrecta":true},
-                {"texto":"6","respuestaCorrecta":false},
-                {"texto":"7","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "5",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "6",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "7",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 58,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El cociente de la división de 195 ÷20,8 es",
             "area": "numeros",
-            "opciones":[
-                {"texto":"0,9375","respuestaCorrecta":false},
-                {"texto":"9,375 ","respuestaCorrecta":true},
-                {"texto":"9,573","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "0,9375",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "9,375 ",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "9,573",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 59,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El cociente de la división de 34,5 ÷2,5 es",
             "area": "numeros",
-            "opciones":[
-                {"texto":"13.8","respuestaCorrecta":true},
-                {"texto":"13.08","respuestaCorrecta":false},
-                {"texto":"13.8","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "13.8",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "13.08",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "13.8",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 60,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El resultado de 64,27 x 0,83 es",
             "area": "numeros",
-            "opciones":[
-                {"texto":"34,5341","respuestaCorrecta":false},
-                {"texto":"53,3441","respuestaCorrecta":true},
-                {"texto":"5334,41","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "34,5341",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "53,3441",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "5334,41",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 61,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El resultado de 132 536,762+27 650,861es",
             "area": "numeros",
-            "opciones":[
-                {"texto":"10,7","respuestaCorrecta":false},
-                {"texto":"10,75","respuestaCorrecta":true},
-                {"texto":"107,5","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "10,7",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "10,75",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "107,5",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 62,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Al multiplicar 3562 x74, el producto es",
             "area": "numeros",
-            "opciones":[
-                {"texto":"4 004 457","respuestaCorrecta":false},
-                {"texto":"5 003 547","respuestaCorrecta":false},
-                {"texto":"5 004 447","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "4 004 457",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "5 003 547",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "5 004 447",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 63,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El nombre de la primera operación que debe efectuarse para resolver 250-5x (7+2)-4 es:",
             "area": "numeros",
-            "opciones":[
-                {"texto":"multiplicación","respuestaCorrecta":false},
-                {"texto":"sustracción ","respuestaCorrecta":false},
-                {"texto":" adición ","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "multiplicación",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "sustracción ",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": " adición ",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 64,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Según la propiedad distributiva de la multiplicación. ¿Cuál combinación de operaciones tienen el mismo resultado que 25 x (8+12)? ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"25 x 8 +12","respuestaCorrecta":false},
-                {"texto":"(25x8) + (25x12)","respuestaCorrecta":true},
-                {"texto":"(25+8) x (25+12)","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "25 x 8 +12",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "(25x8) + (25x12)",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "(25+8) x (25+12)",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 65,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Observe los siguientes numeros: 2  3  5  10 ¿Cuál de ellos no es divisor de 100?",
             "area": "numeros",
-            "opciones":[
-                {"texto":"2","respuestaCorrecta":false},
-                {"texto":"3","respuestaCorrecta":true},
-                {"texto":"5","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "2",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "3",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "5",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 66,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente combinación de operaciones: 43+3x12-15",
             "area": "numeros",
-            "opciones":[
-                {"texto":"64","respuestaCorrecta":true},
-                {"texto":"60","respuestaCorrecta":false},
-                {"texto":"65","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "64",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "60",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "65",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 67,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva la siguiente combinación de operaciones: (76-24) ÷ 2x16",
             "area": "numeros",
-            "opciones":[
-                {"texto":"414","respuestaCorrecta":false},
-                {"texto":"416","respuestaCorrecta":true},
-                {"texto":"84","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "414",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "416",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "84",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 68,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "¿Cuál es una pareja de fracciones homogéneas?",
             "area": "numeros",
-            "opciones":[
-                {"texto":"3/4  y  4/3","respuestaCorrecta":false},
-                {"texto":"3/4  y  1/4","respuestaCorrecta":true},
-                {"texto":"4/3  y  1/3","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "3/4  y  4/3",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "3/4  y  1/4",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "4/3  y  1/3",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 69,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "¿Entre cuales numeros naturales se ubica la fracción 19/5  ?",
             "area": "numeros",
-            "opciones":[
-                {"texto":"1y2","respuestaCorrecta":false},
-                {"texto":"2y3","respuestaCorrecta":false},
-                {"texto":"3y4","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "1y2",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "2y3",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "3y4",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 70,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El numero decimal correspondiente a la fracción 25/10 es:",
             "area": "numeros",
-            "opciones":[
-                {"texto":"2,5","respuestaCorrecta":true},
-                {"texto":"0,25","respuestaCorrecta":false},
-                {"texto":"0,0025","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "2,5",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "0,25",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "0,0025",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 71,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "La fracción decimal que representa al número decimal 1.75 es:",
             "area": "numeros",
-            "opciones":[
-                {"texto":"175/(10 000)","respuestaCorrecta":false},
-                {"texto":"175/1000","respuestaCorrecta":false},
-                {"texto":"175/100","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "175/(10 000)",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "175/1000",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "175/100",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 72,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Al redondear el número decimal 3,4576 a la milésima se obtiene ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"3,45","respuestaCorrecta":false},
-                {"texto":"3, 458","respuestaCorrecta":true},
-                {"texto":"3, 46","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "3,45",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "3, 458",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "3, 46",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 73,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Al redondear el número decimal 9,958 a la décima se obtiene",
             "area": "numeros",
-            "opciones":[
-                {"texto":"9","respuestaCorrecta":false},
-                {"texto":"9,1","respuestaCorrecta":false},
-                {"texto":"10","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "9",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "9,1",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "10",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 74,
             "grado": "sexto",
-            "imagen": "img/rombos.PNG",
+            "imagen": "rombos.PNG",
             "pregunta": "Si se considera la figura roja como la figura original, ¿Cómo se describe la translación aplicada?",
             "area": "geometria",
-            "opciones":[
-                {"texto":"tres unidades a la derecha","respuestaCorrecta":false},
-                {"texto":"tres unidades a la izquierda","respuestaCorrecta":false},
-                {"texto":"siete unidades a la derecha ","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "tres unidades a la derecha",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "tres unidades a la izquierda",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "siete unidades a la derecha ",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 75,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Si A representa el área, B la base mayor, b la base menor y h la altura, ¿cuál de esas letras corresponde a una variable dependiente?",
             "area": "geometria",
-            "opciones":[
-                {"texto":"b","respuestaCorrecta":false},
-                {"texto":"A","respuestaCorrecta":true},
-                {"texto":"B","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "b",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "A",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "B",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 76,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Cristian ha observado que para viajar a donde su abuela gasta3/4  del combustible del tanque lleno de su carro, mientras que para ir donde su tía gasta 3/5 y donde su prima gasta3/6. ¿En cuál de los tres viajes gasta más su combustible? ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"para ir donde su abuela","respuestaCorrecta":true},
-                {"texto":"para ir donde su tía","respuestaCorrecta":false},
-                {"texto":"para ir donde su prima","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "para ir donde su abuela",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "para ir donde su tía",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "para ir donde su prima",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 77,
             "grado": "sexto",
-            "imagen": "img/graficadetrabajo.PNG",
+            "imagen": "graficadetrabajo.PNG",
             "pregunta": "En la gráfica se muestra la distribución de un grupo de voluntarios según el trabajo asignado. ¿Cuáles son las áreas de trabajo en las que se ubican cantidades similares de voluntarios? ",
             "area": "estadistica",
-            "opciones":[
-                {"texto":"En la limpieza y en la cocina.","respuestaCorrecta":true},
-                {"texto":"En la Limpieza y en la organización.","respuestaCorrecta":false},
-                {"texto":"En la Cocina y en la organización.","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "En la limpieza y en la cocina.",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "En la Limpieza y en la organización.",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "En la Cocina y en la organización.",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 78,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Marta y su esposo fueron de paseo a Ciudad de Panamá y destinaron $500 para realizar compras. Si ya gastaron $125,76 en ropa y $98,25 en zapatos, ¿Cuánto dinero les queda?  ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"$275.99","respuestaCorrecta":true},
-                {"texto":"$275.98","respuestaCorrecta":false},
-                {"texto":"$275.92","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "$275.99",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "$275.98",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "$275.92",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 79,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Seleccione el resultado correcto de la siguiente operación: 54 x 10=",
             "area": "numeros",
-            "opciones":[
-                {"texto":"540","respuestaCorrecta":true},
-                {"texto":"64","respuestaCorrecta":false},
-                {"texto":"74","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "540",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "64",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "74",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 80,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Seleccione el resultado correcto de la siguiente operación: 675 x 100=",
             "area": "numeros",
-            "opciones":[
-                {"texto":"6750","respuestaCorrecta":false},
-                {"texto":"67500","respuestaCorrecta":true},
-                {"texto":"675000","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "6750",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "67500",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "675000",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 81,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Seleccione el resultado correcto de la siguiente operación: 5,32 x 1000=",
             "area": "numeros",
-            "opciones":[
-                {"texto":"5320","respuestaCorrecta":true},
-                {"texto":"53200","respuestaCorrecta":false},
-                {"texto":"532000","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "5320",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "53200",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "532000",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 82,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Joaquín compra semillas de culantro para sembrar en su huerta. Si cada paquete tiene un peso de 0,012kg, ¿Cuál es el peso de 10 paquetes?",
             "area": "medidas",
-            "opciones":[
-                {"texto":"0.12","respuestaCorrecta":true},
-                {"texto":"0.14","respuestaCorrecta":false},
-                {"texto":"0.13","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "0.12",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "0.14",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "0.13",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 83,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Un paquete de aplicadores contiene 1000 unidades. Si el peso completo del contenido es de 250g, ¿Cuál es el peso de un solo aplicador?",
             "area": "medidas",
-            "opciones":[
-                {"texto":"2","respuestaCorrecta":false},
-                {"texto":"4","respuestaCorrecta":true},
-                {"texto":"6","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "2",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "4",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "6",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 84,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Elija el resultado correspondiente a cada operación 52 x 0,3=",
             "area": "numeros",
-            "opciones":[
-                {"texto":"15,6","respuestaCorrecta":true},
-                {"texto":"56,1","respuestaCorrecta":false},
-                {"texto":"51,6","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "15,6",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "56,1",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "51,6",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 85,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes multiplicaciones 3,4 x 6",
             "area": "numeros",
-            "opciones":[
-                {"texto":"20,4","respuestaCorrecta":true},
-                {"texto":"4,22","respuestaCorrecta":false},
-                {"texto":"24,0","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "20,4",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "4,22",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "24,0",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 86,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes multiplicaciones 341 x 0,52",
             "area": "numeros",
-            "opciones":[
-                {"texto":"177,30","respuestaCorrecta":false},
-                {"texto":"177,34","respuestaCorrecta":false},
-                {"texto":"177,32","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "177,30",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "177,34",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "177,32",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 87,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Doña Liliana hace helados para vender. Si para preparar un helado necesita 0,06 L de leche, ¿Cuánta leche necesita para preparar 50 helados?",
             "area": "medidas",
-            "opciones":[
-                {"texto":"3L","respuestaCorrecta":true},
-                {"texto":"0,012L","respuestaCorrecta":false},
-                {"texto":"5L","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "3L",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "0,012L",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "5L",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 88,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El resultado de 23 654 905 + 14 726 821 ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"37 370 726","respuestaCorrecta":false},
-                {"texto":"37 381 726","respuestaCorrecta":false},
-                {"texto":"38 381 726","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "37 370 726",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "37 381 726",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "38 381 726",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 89,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes divisiones 145,8÷5 ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"29,16","respuestaCorrecta":true},
-                {"texto":"26,91","respuestaCorrecta":false},
-                {"texto":"21,69","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "29,16",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "26,91",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "21,69",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 90,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes divisiones 44,46÷12 ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"3,703","respuestaCorrecta":false},
-                {"texto":"5,307","respuestaCorrecta":false},
-                {"texto":"3,705","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "3,703",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "5,307",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "3,705",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 91,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes divisiones 54÷2,4",
             "area": "numeros",
-            "opciones":[
-                {"texto":"22.5","respuestaCorrecta":true},
-                {"texto":"22.6","respuestaCorrecta":false},
-                {"texto":"21.5","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "22.5",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "22.6",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "21.5",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 92,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes divisiones 472÷9,44",
             "area": "numeros",
-            "opciones":[
-                {"texto":"55","respuestaCorrecta":false},
-                {"texto":"50","respuestaCorrecta":true},
-                {"texto":"15","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "55",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "50",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "15",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 93,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes divisiones 123,6÷8,24",
             "area": "numeros",
-            "opciones":[
-                {"texto":"15","respuestaCorrecta":true},
-                {"texto":"10","respuestaCorrecta":false},
-                {"texto":"5","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "15",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "10",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "5",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 94,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Resuelva las siguientes divisiones 45,36÷16,2",
             "area": "numeros",
-            "opciones":[
-                {"texto":"2.7","respuestaCorrecta":false},
-                {"texto":"2.0","respuestaCorrecta":false},
-                {"texto":"2.8","respuestaCorrecta":true}
+            "opciones": [
+                {
+                    "texto": "2.7",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "2.0",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "2.8",
+                    "respuestaCorrecta": true
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 95,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El resultado de 10 461 728 - 5 457 281 es",
             "area": "numeros",
-            "opciones":[
-                {"texto":"263 588","respuestaCorrecta":true},
-                {"texto":"136 580","respuestaCorrecta":false},
-                {"texto":"39 182","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "263 588",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "136 580",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "39 182",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 96,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "Al resolver 86 ÷8, el cociente es ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"10,7","respuestaCorrecta":false},
-                {"texto":"10,75","respuestaCorrecta":true},
-                {"texto":"107,5","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "10,7",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "10,75",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "107,5",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 97,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El resultado de 132 536,762+27 650,861es",
             "area": "numeros",
-            "opciones":[
-                {"texto":"160 187,623","respuestaCorrecta":true},
-                {"texto":"160 178,823","respuestaCorrecta":false},
-                {"texto":"409 450,273","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "160 187,623",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "160 178,823",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "409 450,273",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 98,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El resultado de 64,27 x 0,83 es ",
             "area": "numeros",
-            "opciones":[
-                {"texto":"34,5341","respuestaCorrecta":false},
-                {"texto":"53,3441","respuestaCorrecta":true},
-                {"texto":"53,3441","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "34,5341",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "53,3441",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "53,3441",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 99,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El cociente de la división de 34,5 ÷2,5 es",
             "area": "numeros",
-            "opciones":[
-                {"texto":"13.8","respuestaCorrecta":true},
-                {"texto":"13.08","respuestaCorrecta":false},
-                {"texto":"13.8","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "13.8",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "13.08",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "13.8",
+                    "respuestaCorrecta": false
+                }
             ]
         },
-		 
-		 
-		{
+
+        {
             "id": 100,
             "grado": "sexto",
             "imagen": "",
             "pregunta": "El cociente de la división de 195 ÷20,8 es",
             "area": "numeros",
-            "opciones":[
-                {"texto":"0,9375","respuestaCorrecta":false},
-                {"texto":"9,375 ","respuestaCorrecta":true},
-                {"texto":"9,573","respuestaCorrecta":false}
+            "opciones": [
+                {
+                    "texto": "0,9375",
+                    "respuestaCorrecta": false
+                },
+                {
+                    "texto": "9,375 ",
+                    "respuestaCorrecta": true
+                },
+                {
+                    "texto": "9,573",
+                    "respuestaCorrecta": false
+                }
             ]
         }
-		 
-		
-		
+
+
+
     ]
 }
